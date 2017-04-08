@@ -1,0 +1,26 @@
+<script src="../vendor/reveal/reveal.js"></script>
+
+<script src="../vendor/reveal/lib/js/head.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js" integrity="sha256-3SFEu3qBPVRitcXI7ITnBKtwkYmoqF7ap4xI5dEexaY=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/scss.min.js" integrity="sha256-/27cA5aA9DgzXPb747VxVTzwPG/X5tihoKySMSq3bwk=" crossorigin="anonymous"></script>
+
+<script>
+
+    Reveal.initialize({
+        history: true,
+        slideNumber: true,
+        //transition: Reveal.getQueryHash().transition || 'default',
+        transition: 'slide',
+        backgroundTransition: 'zoom',
+        dependencies: [
+            //{ src: '../scripts/plugin/highlight/highlight.pack.js', async: false, callback: function () { } },
+            { src: '../vendor/reveal/plugin/notes/notes.js', async: false }
+        ]
+    });
+
+    (function(){
+        hljs.initHighlightingOnLoad(); 
+    })();
+
+</script>>
