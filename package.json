@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "personalwebsite",
   "main": "GruntFile.js",
-  "dependencies": {},
+  "dependencies": {
+    "reveal-code-focus": "^1.0.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.18.8",
     "font-awesome": "^4.7.0",

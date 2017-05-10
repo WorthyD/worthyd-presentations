@@ -8,9 +8,20 @@
         <code>let</code> defines a block level variable. It can help prevent confusion in going through source code.
     </p>
 </section>
+<style>
+    code .fragment{
+        opacity:1 !important;
+        background:transparent;
+        visibility:visible !important;
+    }
+    code .fragment.visible{
+    background:yellow;
+    }
+ 
+</style>
 <section>
     <h1>Prevents errors</h1>
-    <pre><code class="js">
+    <pre><code class="js" >
 function test() {
     console.log(x); //undefined
     var x = 't';
@@ -20,14 +31,17 @@ test();
 
         </code></pre>
 
-    <pre class="fragment"><code class="js">
+    <!--<pre class="fragment"><code class="js">
 function test2() {
     console.log(y); //Throws error
     let y = 't';
     console.log(y);
 }
 test2();
-        </code></pre>
+        </code></pre>-->
+<p class="fragment" data-code-focus="1">
+    This focuses on the comment.
+  </p>
 </section>
 <section>
     <h1>Scoping</h1>

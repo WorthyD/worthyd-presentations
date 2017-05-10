@@ -45,6 +45,8 @@ gulp.task('copy', function(){
     gulp.src(['node_modules/reveal.js/plugin/**']).pipe(gulp.dest('docs/vendor/reveal/plugin'));
     gulp.src(['node_modules/reveal.js/css/**/*.css']).pipe(gulp.dest('docs/vendor/reveal/css'));
     gulp.src(['node_modules/reveal.js/lib/js/**/*.js']).pipe(gulp.dest('docs/vendor/reveal/lib/js'));
+    
+    gulp.src(['node_modules/reveal-code-focus/reveal-code-focus.js']).pipe(gulp.dest('docs/vendor/reveal/plugin/codefocus'));
 
     gulp.src([
             'node_modules/font-awesome/**'
