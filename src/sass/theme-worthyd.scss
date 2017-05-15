@@ -24,80 +24,77 @@ $fourth: #996400;
     /*********************************************
  * HEADERS
  *********************************************/
-    .reveal {
-        h1 {
+    h1 {
+        color: $primary;
+    }
+    h2 {
+        color: $accentColor;
+    }
+    h3 {
+        color: $fourth;
+    }
+    .highlight {
+        color: $primary;
+    }
+    li,
+    p,
+    div {
+        &>code {
             color: $primary;
         }
-        h2 {
-            color:$accentColor;
-        }
-        h3 {
-            color: $fourth;
-        }
-        .highlight {
+    }
+    a:not(.image) {
+        color: $primary;
+        text-decoration: none;
+        &:hover {
             color: $primary;
         }
-        li,
-        p,
-        div {
-            &>code {
-                color: $primary;
+    }
+    .roll span:after {
+        color: #fff;
+        background: $primary;
+        ;
+    }
+    strong {
+        color: $accentColor;
+    }
+    .controls {
+        .navigate- {
+            &left,
+            &left.enabled {
+                border-right-color: $primary;
+            }
+            &right,
+            &right.enabled {
+                border-left-color: $primary;
+            }
+            &-up,
+            &up.enabled {
+                border-bottom-color: $primary;
+            }
+            &down,
+            &down.enabled {
+                border-top-color: $primary;
+            }
+            &left.enabled:hover {
+                border-right-color: $primary;
+            }
+            &right.enabled:hover {
+                border-left-color: $primary;
+            }
+            &up.enabled:hover {
+                border-bottom-color: $primary;
+            }
+            &down.enabled:hover {
+                border-top-color: $primary;
             }
         }
-        a:not(.image) {
-            color: $primary;
-            text-decoration: none;
-            &:hover {
-                color: $primary;
-            }
-        }
-        .roll span:after {
-            color: #fff;
-            background: $primary;
-            ;
-        }
-        strong {
-            color: $accentColor;
-        }
- 
-        .controls {
-            .navigate- {
-                &left,
-                &left.enabled {
-                    border-right-color: $primary;
-                }
-                &right,
-                &right.enabled {
-                    border-left-color: $primary;
-                }
-                &-up,
-                &up.enabled {
-                    border-bottom-color: $primary;
-                }
-                &down,
-                &down.enabled {
-                    border-top-color: $primary;
-                }
-                &left.enabled:hover {
-                    border-right-color: $primary;
-                }
-                &right.enabled:hover {
-                    border-left-color: $primary;
-                }
-                &up.enabled:hover {
-                    border-bottom-color: $primary;
-                }
-                &down.enabled:hover {
-                    border-top-color: $primary;
-                }
-            }
-        }
-        .progress {
-            height: 10px;
-            background: rgba(0, 0, 0, 0.2);
-        }
-        .progress span {
-            background: $primary;
-        }
-   }
+    }
+    .progress {
+        height: 10px;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    .progress span {
+        background: $primary;
+    }
 }

@@ -18,13 +18,7 @@ body {
 
 .main-slide {
     //background: url(../images/mainslide.png) center center;
-    background:rgba(0,0,0,.5);
-}
-
-#main-slide {
-    h1 {
-        color: #fff;
-    }
+    background: rgba(0, 0, 0, .5);
 }
 
 .reveal {
@@ -50,6 +44,16 @@ body {
  *********************************************/
 
 .reveal {
+    .main-slide {
+        h1 {
+            color: #fff;
+            text-align:center;
+        }
+        h2{
+            color:#fff;
+            text-align:center;
+        }
+    }
     h1,
     h2,
     h3,
