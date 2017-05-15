@@ -16,6 +16,16 @@ body {
     font-family: arial;
 }
 
+.main-slide {
+    background: url(../images/mainslide.png) center center;
+}
+
+#main-slide {
+    h1 {
+        color: #fff;
+    }
+}
+
 .reveal {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 36px;
@@ -340,11 +350,10 @@ a[target="_blank"]:after {
 }
 
 .reveal {
-    .center-text{
-        text-align:center;
+    .center-text {
+        text-align: center;
     }
 }
-
 
 ///////////////////////////
 //TODO: Eventually FIx !important
@@ -355,3 +364,7 @@ a[target="_blank"]:after {
 .reveal .focus-fragment li.current-fragment {
     opacity: 1 !important;
 }
+
+@import'theme-rfi.scss';
+@import'theme-uofa.scss';
+@import'theme-worthyd.scss';
