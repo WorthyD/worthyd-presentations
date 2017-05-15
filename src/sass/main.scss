@@ -16,11 +16,6 @@ body {
     font-family: arial;
 }
 
-.main-slide {
-    //background: url(../images/mainslide.png) center center;
-    background: rgba(0, 0, 0, .5);
-}
-
 .reveal {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 36px;
@@ -45,13 +40,22 @@ body {
 
 .reveal {
     .main-slide {
+        text-align: center;
         h1 {
             color: #fff;
-            text-align:center;
+            text-align: center;
         }
-        h2{
-            color:#fff;
-            text-align:center;
+        h2 {
+            color: #fff;
+            text-align: center;
+        }
+        a,
+        img {
+            display: block;
+            margin: 5px auto;
+        }
+        a:not(.image) {
+            color: #fff;
         }
     }
     h1,
@@ -309,6 +313,11 @@ a[target="_blank"]:after {
     margin-left: 10px;
 }
 
+.socials a[target="_blank"]:after {
+    content: "";
+    display: none;
+}
+
 .reveal strong,
 .reveal b {
     font-weight: bold;
@@ -370,6 +379,28 @@ a[target="_blank"]:after {
     opacity: 1 !important;
 }
 
+.reveal .about-me-slide {
+    .about-me-image {
+        float: left;
+        max-width: 30%;
+    }
+    .info {
+        >ul {
+            max-width: 60%;
+            float: right;
+        }
+    }
+}
+
 @import'theme-rfi.scss';
 @import'theme-uofa.scss';
 @import'theme-worthyd.scss';
+.giphy-embed+p { 
+    font-size:12px;
+}
+
+@media only screen and (max-width: 500px) {
+    .giphy-embed {
+        display: none;
+    }
+}

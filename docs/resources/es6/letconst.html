@@ -1,0 +1,133 @@
+<section>
+    <h1>New Variable Declarations</h1>
+    <h1 class="fragment"><code>let</code> and <code>const</code></h1>
+</section>
+<section>
+    <h1><code>let</code></h1>
+    <p>
+        <code>let</code> defines a block level variable. It can help prevent confusion in going through source code.
+    </p>
+</section>
+<style>
+    code .fragment{
+        opacity:1 !important;
+        background:transparent;
+        visibility:visible !important;
+    }
+    code .fragment.visible{
+    background:yellow;
+    }
+ 
+</style>
+<section>
+    <h1>Prevents errors</h1>
+    <pre><code class="js" >
+function test() {
+    console.log(x); //undefined
+    var x = 't';
+    console.log(x); // t
+}
+test();
+
+        </code></pre>
+
+    <!--<pre class="fragment"><code class="js">
+function test2() {
+    console.log(y); //Throws error
+    let y = 't';
+    console.log(y);
+}
+test2();
+        </code></pre>-->
+<p class="fragment" data-code-focus="1">
+    This focuses on the comment.
+  </p>
+</section>
+<section>
+    <h1>Scoping</h1>
+    <div class="two-col">
+        <div >
+            <pre><code class="js">
+function test2() {
+    var x = 't';
+    console.log(x);  //t
+
+    if (x == 't') {
+        var x = "y"
+        console.log(x);  //y
+    }
+
+    console.log(x);  //y
+}
+
+test2();             </code></pre>
+        </div>
+
+        <div class="fragment">
+            <pre><code class="js">
+function test() {
+    let x = 't';
+    console.log(x); // t
+      
+    if (x == 't') {
+        let x = "y"
+        console.log(x); //y
+    }
+    
+    console.log(x);  //t
+}
+
+test(); 
+</code></pre>
+        </div>
+    </div>
+</section>
+<section>
+    <h1><code>const</code></h1>
+    <p>
+        <code>const</code> is used to generate variables that do not change.
+    </p>
+</section>
+<section>
+    <h1>Using <code>const</code></h1>
+    <div class="two-col">
+        <div class="fragment">
+    <pre><code class="js">
+var pi = 3.14
+
+function calc(d) {
+    return d * pi;
+}
+
+calc(4);
+
+/* 100 lines down */
+
+pi = 4;  
+
+/* 100 lines down */
+
+calc(4);//Different output
+        </code></pre>
+        </div>
+        <div class="fragment">
+
+    <pre><code class="js">
+const pi2 = 3.14
+
+function calc2(d) {
+    return d * pi2;
+}
+
+calc2(4);
+
+pi = 4;  // errors
+
+calc(4);//Different output
+</code></pre>
+        </div>
+    </div>
+    <aside class="notes">
+        EOS
+    </aside>
+</section>
