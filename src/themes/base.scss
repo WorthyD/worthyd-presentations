@@ -1,0 +1,28 @@
+// .reveal {
+//   ul {
+//     text-align: left;
+//     display: inline-block;
+//     margin: 0 0 0 1rem;
+//   }
+//   pre {
+//     font-size: 1rem;
+//   }
+// }
+// .prism-code {
+//   div,
+//   span {
+//     text-align: left;
+//   }
+// }
+
+
+
+a[target="_blank"]:after {
+    font-family: 'FontAwesome';
+    content: " \f08e";
+    font-size: .6em;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    margin-left: 10px;
+}

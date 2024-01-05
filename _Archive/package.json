@@ -1,0 +1,30 @@
+{
+  "name": "worthydv5",
+  "version": "1.0.0",
+  "description": "personalwebsite",
+  "main": "GruntFile.js",
+  "dependencies": {
+    "reveal-code-focus": "^1.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "font-awesome": "^4.7.0",
+    "glob": "^7.1.6",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-file-include": "^2.1.1",
+    "gulp-header": "^2.0.9",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "highlight.js": "^9.17.1",
+    "load-grunt-tasks": "^3.5.0",
+    "reveal.js": "^3.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp start"
+  },
+  "author": "worthyd",
+  "license": "ISC"
+}
