@@ -4,6 +4,10 @@ const Home = () => (
         <NavLink to="/ui">
             UI
         </NavLink>
+        <NavLink to="/books">
+        books
+        </NavLink>
+ 
     </section>
 );
 
