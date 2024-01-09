@@ -3,7 +3,7 @@ export const Intro = () => (
     <>
         <Slide>
             <h2>Dev Books</h2>
-            <p>15+ books you could/shoud/maybe read</p>
+            <p>30+ books you could/shoud/maybe read</p>
             <footer>Jan 2024</footer>
         </Slide>
         <Slide>

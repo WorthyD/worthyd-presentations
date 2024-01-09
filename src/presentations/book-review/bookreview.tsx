@@ -16,6 +16,7 @@ Find Opportunities
 Audbile
 1.75
 
+Agile Manifest
 
 
 Essential Dev
