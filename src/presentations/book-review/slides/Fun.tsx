@@ -1,18 +1,34 @@
+import { Book } from '~/components/Book';
 import { Slide } from '../../../components/Slide';
+import { BookSlide } from './components/BookSlide';
 export const Fun = () => (
-    <>
-        <Slide>
-            <h2>Dev Books</h2>
-            <p>15+ books you could/shoud/maybe read</p>
-            <footer>Jan 2024</footer>
-        </Slide>
-        <Slide>
-            <h2>Why</h2>
-            <ul>
-                <li className="fragment">Want their brand feel</li>
-                <li className="fragment">Believe it's simple</li>
-                <li className="fragment">Pet project</li>
-            </ul>
-        </Slide>
-    </>
-)
+  <>
+    <Slide>
+      <Book
+        book={{
+          title:
+            'The Expurgation of Maniac Mansion for the Nintendo Entertainment System',
+        }}
+      ></Book>
+    </Slide>
+    <Slide>
+      <h3>That Douglas Crockford</h3>
+    </Slide>
+
+    <Slide>
+      <h2>Boss Fight Books</h2>
+    </Slide>
+    <Slide>
+      <Book
+        book={{
+          title: 'Masters of Doom',
+        }}
+      ></Book>
+      <Book
+        book={{
+          title: 'Doom Guy',
+        }}
+      ></Book>
+    </Slide>
+  </>
+);
