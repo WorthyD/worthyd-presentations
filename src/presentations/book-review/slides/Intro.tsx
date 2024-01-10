@@ -1,4 +1,5 @@
 import { Slide } from '../../../components/Slide';
+import { Note } from '~/components/Notes';
 export const Intro = () => {
   function getImageUrl(name) {
     return new URL(name, import.meta.url).href;
@@ -13,11 +14,21 @@ export const Intro = () => {
       <Slide>
         <h2>What we are going to cover</h2>
         <ul>
-            <li className="fragment">'Essential' Dev Books</li>
-            <li className="fragment">Career Path Books</li>
-            <li className="fragment">Team/Lifestyle Books</li>
-            <li className="fragment">'Fun' Reads</li>
+          <li className="fragment">'Essential' Dev Books</li>
+          <li className="fragment">Career Path Books</li>
+          <li className="fragment">Team/Lifestyle Books</li>
+          <li className="fragment">'Fun' Reads</li>
         </ul>
+      </Slide>
+      <Slide>
+        <h2>Biases</h2>
+        <Note>
+          <ul>
+            <li>Companies of 8 to 200-ish people. One crammed into a 6K.</li>
+            <li>16 years in the industry.</li>
+            <li>What may be valuable to me wont be valuable to you</li>
+          </ul>
+        </Note>
       </Slide>
       <Slide>
         <Slide>
@@ -37,19 +48,21 @@ export const Intro = () => {
           </ul>
         </Slide>
         <Slide>
-          <img src={getImageUrl('../assets/book1.png')} />
+          <img src={getImageUrl('./src/assets/book1.png')} />
         </Slide>
         <Slide>
-          <img src={getImageUrl('../assets/book1-use.png')} />
+          <img src={getImageUrl('./src/assets/book1-use.png')} />
         </Slide>
       </Slide>
       <Slide>
         <h2>Why should we be reading?</h2>
         <ul>
-            <li className="fragment">Keep our existing tools sharp</li>
-            <li className="fragment">Broaden our skill sets with minimal risk</li>
-            <li className="fragment">Provide new perspectives</li>
-            <li className="fragment">Less stressful than learning in production</li>
+          <li className="fragment">Keep our existing tools sharp</li>
+          <li className="fragment">Broaden our skill sets with minimal risk</li>
+          <li className="fragment">Provide new perspectives</li>
+          <li className="fragment">
+            Less stressful than learning in production
+          </li>
         </ul>
       </Slide>
       <Slide>
@@ -57,8 +70,8 @@ export const Intro = () => {
         <h3 className="fragment">I don't enjoy reading. It's hard.</h3>
         <h3 className="fragment">I listen to almost all my books....</h3>
         <h3 className="fragment">at 1.75 speed.</h3>
-     </Slide>
- 
+      </Slide>
+      <Slide>Audible, value, when to listen</Slide>
     </>
   );
 };
