@@ -24,8 +24,8 @@ export const Intro = () => {
         <h2>Biases</h2>
         <Note>
           <ul>
+            <li>16 years in the industry. Non traditional entry</li>
             <li>Companies of 8 to 200-ish people. One crammed into a 6K.</li>
-            <li>16 years in the industry.</li>
             <li>What may be valuable to me wont be valuable to you</li>
           </ul>
         </Note>
@@ -63,6 +63,8 @@ export const Intro = () => {
           <li className="fragment">
             Less stressful than learning in production
           </li>
+
+          <li className="fragment">Motivational</li>
         </ul>
       </Slide>
       <Slide>

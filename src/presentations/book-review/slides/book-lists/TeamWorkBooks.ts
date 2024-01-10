@@ -14,7 +14,17 @@ export const TeamWorkBookList: BookGroupInfo[] = [
         publishYear: `1984`,
       },
     ],
-    notes: `Taiichi Ohno's Toyota's Production system`,
+    notes: `Taiichi Ohno's Toyota's Production system
+    Focuses on the Theory of Constraints
+Process Of On-Going Improvement (POOGI):
+Identify the system's bottlenecks
+Decide how to exploit those bottlenecks
+Subordinate every other decision to 'step two decisions'
+Elevate the systems bottlenecks
+If, in a previous step, a bottleneck has been broken, go back to the beginning (Step 1).
+
+    
+    `,
   },
   {
     title: '',
@@ -47,7 +57,27 @@ export const TeamWorkBookList: BookGroupInfo[] = [
         publishYear: `2016`,
       },
     ],
-    notes: '',
+    notes: `
+    Introduces the “Three Ways” DevOps Derive From
+    First Way: Work always flows in one direction – downstream
+    Second Way: Create, shorten and amplify feedback loops
+    Third Way: Continued experimentation, in order to learn from mistakes, and achieve mastery
+    Identifies and covers the four types of work
+    Business Projects
+    Internal IT Projects
+    Changes
+    Unplanned Work
+
+
+     Identifies and focuses on the ‘Five Ideals’  that  are today’s challenges impacting engineering and business
+Locality and Simplicity
+Focus, Flow and Joy
+Improvement of Daily Work
+Psychological Safety
+Customer Focus
+
+    
+    `,
   },
   {
     title: '',
@@ -71,7 +101,15 @@ export const TeamWorkBookList: BookGroupInfo[] = [
         publishYear: `2015`,
       },
     ],
-    notes: 'No link to TG due to price',
+    notes: `
+    No link to TG due to price
+    Focuses on the development team and who they interact with.
+HRT Principle for teams
+Importance of establishing a dev team culture
+Working with difficult people and positive ways to work with them.
+Advice for navigating office politics
+
+    `,
   },
   {
     title: '',
@@ -86,7 +124,15 @@ export const TeamWorkBookList: BookGroupInfo[] = [
         publishYear: `1999`,
       },
     ],
-    notes: '',
+    notes: `
+    First four chapters are hard to get through
+Stresses the importance of UX
+Big deal at the time
+Roles of design, engineering, and business acumen
+Principles of interactive design
+Implementing design in software
+Can be a really hard read
+`,
   },
   {
     title: '',

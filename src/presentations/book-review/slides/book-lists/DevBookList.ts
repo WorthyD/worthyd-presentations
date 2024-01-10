@@ -14,7 +14,7 @@ export const DevBookList: BookGroupInfo[] = [
         publishYear: '2001',
       },
     ],
-    notes: '',
+    notes: `Look for these author's books`,
   },
   {
     title: '',
@@ -30,7 +30,17 @@ export const DevBookList: BookGroupInfo[] = [
         publishYear: '2004',
       },
     ],
-    notes: '',
+    notes: `
+Part 1 - Laying the foundation
+Part 2 - Creating High-Quality Code
+Part 3 - Variables
+Part 4 - Statements
+Part 5 - Code Improvements
+Part 6 - System Considerations
+Part 7 - Software Craftsmanship
+
+914 pages of hard core coding awesomeness.
+    `,
   },
   {
     title: "The 'Text Books'",
@@ -39,11 +49,11 @@ export const DevBookList: BookGroupInfo[] = [
         title: 'The Mythical Man Month',
         desc: '',
         thumb: 'mm.jpg',
-        author: 'Frederick Brooks Jr.',
+        author: 'Frederick Brooks',
         amazon:
           'https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959/',
         audible: '',
-        publishYear: '1995',
+        publishYear: '1975',
       },
       {
         title: 'Refactoring',
@@ -56,7 +66,23 @@ export const DevBookList: BookGroupInfo[] = [
         publishYear: '1999 / 2018',
       },
     ],
-    notes: '',
+    notes: `
+Mythical Man Month:
+'Adding manpower to a late software project makes it later.'
+    
+Refactoring:
+
+This book provides reasons for refactoring, the mechanics 
+behind it and examples of refactoring
+
+The true test of good code is how easy it is to change it
+
+With refactoring, we can take a bad, even chaotic, 
+design and rework it into well-structured code
+
+The key to effective refactoring is recognizing that you go faster when you take tiny steps
+
+    `,
   },
   {
     title: 'Uncle Bob',
@@ -113,7 +139,70 @@ export const DevBookList: BookGroupInfo[] = [
         publishYear: '2021',
       },
     ],
-    notes: '',
+    notes: `
+    Clean Code:
+    Definition of clean code
+Meaningful Variable Names
+Functions
+Good Comments
+Formatting
+Data Structures
+Error Handling
+TDD
+
+Clean Coder:
+Professionalism
+Saying No / Saying Yes
+Coding
+TDD
+Practicing
+Communicating
+Time Management
+Estimations
+Pressure
+Collaboration
+
+Clean architecture:
+Reuse/release equivalence principle
+Common closure principle
+Common reuse principle
+Acyclic dependencies principle
+The stable dependency principle
+Stable abstractions principle
+Time Management
+Estimations
+Pressure
+Collaboration
+
+Clean Agile:
+What is Agile?
+What is proper SCRUM?
+Business Practices
+Team Practices
+Technical Practices
+Becoming Agile
+Craftsmanship
+
+Clean Craftsmanship:
+Moving towards the "north star" of true software 
+craftsmanship: the state of knowing how to program well
+
+Practical, specific guidance for applying five core 
+disciplines: test-driven development, refactoring, simple design,
+collaborative programming, and acceptance tests
+
+How developers and teams can promote productivity, quality, and courage
+
+The true meaning of integrity and teamwork among programmers, 
+and ten specific commitments every software professional should make
+
+
+
+
+
+
+    
+    `,
   },
   {
     title: '',
@@ -130,6 +219,24 @@ export const DevBookList: BookGroupInfo[] = [
         publishYear: '1999, 2019',
       },
     ],
-    notes: '',
+    notes: `
+A Pragmatic Philosophy
+- Software Entropy
+- Stone Soup
+- A Pragmatic Approach
+DRY
+Orthogonality
+Tracer Bullets
+Basic Tools
+Power of Plain Text
+Shell Games
+Much Much more
+1.1 - Tip 4: Don't Live with Broken Windows
+1.2 - Be a catalyst for change
+2.2 - Eliminate Effects Between Unrelated Things
+Tracer bullets guuied to target
+
+`,
   },
+  
 ];

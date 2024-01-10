@@ -12,6 +12,7 @@ import { Fun } from './Fun';
 export default [
   <Intro key="intro" />,
   <DevBooks key="dev-books" />,
+  // If hemmingway wrote JS
   <CareerBooks key="career-books" />,
   <ProcessBooks key="process-books" />,
   <LifeBooks key="life-books" />,

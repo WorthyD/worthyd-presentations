@@ -16,7 +16,16 @@ export const LeaderCareerBookList: BookGroupInfo[] = [
         publishYear: '2017',
       },
     ],
-    notes: '',
+    notes: `
+
+Begin by exploring what you expect from a manager
+Understand what it takes to be a good mentor, and a good tech lead
+Learn how to manage individual members while remaining focused on the entire team
+Understand how to manage yourself and avoid common pitfalls that challenge many leaders
+Manage multiple teams and learn how to manage managers
+Learn how to build and bootstrap a unifying culture in teams
+from:https://www.oreilly.com/library/view/the-managers-path/9781491973882/
+    `,
   },
   {
     title: '',
@@ -33,7 +42,7 @@ export const LeaderCareerBookList: BookGroupInfo[] = [
         publishYear: '2015',
       },
     ],
-    notes: 'free with membership?',
+    notes: '',
   },
   {
     title: '',
@@ -78,7 +87,14 @@ export const LeaderCareerBookList: BookGroupInfo[] = [
         publishYear: '2014',
       },
     ],
-    notes: '',
+    notes: `
+    Te need to be save, the courage to what's right
+    Great leaders sacrifice their own comfort--
+    even their own survival--for the good of those in their care
+    goes into the lengths some companies go through to avoid layoffs
+    Hits generation gaps and the differences in businesses though te day
+    
+    `
   },
   {
     title: '',
@@ -109,7 +125,7 @@ export const LeaderCareerBookList: BookGroupInfo[] = [
         publishYear: '5th century BC',
       },
     ],
-    notes: '',
+    notes: ' Leadership strategies, resource management, knowing yourself, knowing your opponent, win without battle    ',
   },
 
   {
@@ -125,6 +141,11 @@ export const LeaderCareerBookList: BookGroupInfo[] = [
         publishYear: '2006',
       },
     ],
-    notes: '',
+    notes: `
+    'He won because he possessed an extraordinary ability to put himself in 
+    the place of other men, to experience what they were feeling, 
+    to understand their motives and desires'
+successful because he found ways to win the respect of his former competitors
+    `,
   },
 ];

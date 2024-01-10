@@ -1,4 +1,4 @@
-import { BookGroupInfo } from '../components/BookGroup';
+ggasdfasdfimport { BookGroupInfo } from '../components/BookGroup';
 
 export const LifeBookList: BookGroupInfo[] = [
   {
@@ -38,8 +38,20 @@ export const LifeBookList: BookGroupInfo[] = [
         publishYear: `2019`,
       },
     ],
-    notes:
-      'Slow Productivity: The Lost Art of Accomplishment Without Burnout, out in march',
+    notes: `
+    
+Slow Productivity: The Lost Art of Accomplishment Without Burnout, out in march
+Deep work is the ability to focus without distraction on a cognitively demanding task.
+Shallow work is non-cognitively demanding, logistical-style work, often performed while distracted.
+Deep work is like a superpower in our increasingly competitive twenty-first-century economy
+
+
+Digital Min:
+Focus on social media is evil
+FOMO bad
+ 
+      
+      `,
   },
   {
     title: 'Building Habits',
@@ -72,7 +84,8 @@ export const LifeBookList: BookGroupInfo[] = [
         publishYear: `2016`,
       },
     ],
-    notes: '',
+    notes: `Atomic Habits is the definitive guide to breaking bad behaviors and adopting good ones in four steps, showing you how small, incremental, everyday routines compound into massive, positive change over time.
+    `,
   },
   {
     title: '',
