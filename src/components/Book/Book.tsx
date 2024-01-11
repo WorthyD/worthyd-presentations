@@ -1,3 +1,4 @@
+import './book.scss';
 export interface BookItem {
   title: string;
   desc?: string;
@@ -17,12 +18,26 @@ export const Book = ({ book }: BookProps) => {
   }
 
   return (
-    <div>
-      {/* {book.thumb && <img src={getImageUrl(book.thumb)}  />} */}
-      <h3>{book.title}</h3>
-      {book.desc && <h6>{book.desc}</h6>}
-      <div>
-        <span>{book.author}</span> | <span>{book.publishYear}</span>
+    <div className="book-item">
+      <div>{book.thumb && <img src={getImageUrl(book.thumb)} />}</div>
+      <div className="book-item_info">
+        <h3>{book.title}</h3>
+        {book.desc && <h6>{book.desc}</h6>}
+        <div className="book-item__author-info">
+          <span>{book.author}</span> | <span>{book.publishYear}</span>
+        </div>
+        <div className="book-item__book-links">
+          {book.amazon && (
+            <a href={book.amazon} target="_blank">
+              Book
+            </a>
+          )}
+          {book.audible && (
+            <a href={book.audible} target="_blank">
+              Audio
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

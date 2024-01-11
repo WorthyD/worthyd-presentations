@@ -1,0 +1,49 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+@import 'base.scss';
+// Default mixins and settings -----------------
+@import '/node_modules/reveal.js/css/theme/template/mixins.scss';
+@import '/node_modules/reveal.js/css/theme/template/settings.scss';
+// ---------------------------------------------
+
+@import '/node_modules/reveal.js/dist/theme/fonts/source-sans-pro/source-sans-pro.css';
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 42px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #00afaa;
+$linkColorHover: lighten($linkColor, 5%);
+$selectionBackgroundColor: lighten($linkColor, 15%);
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1em;
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+// Theme template ------------------------------
+@import '/node_modules/reveal.js/css/theme/template/theme.scss';
+// ---------------------------------------------
+
+.reveal {
+  pre {
+    font-size: 1rem;
+  }
+}

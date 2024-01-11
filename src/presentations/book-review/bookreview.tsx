@@ -1,6 +1,6 @@
 import LayoutDeck from '../../layouts/LayoutDeck';
 import BookReviewSlides from './slides';
-
+import '../../themes/jbh.scss';
 const BookReview = () => {
   return (
     <>

@@ -91,6 +91,23 @@ FOMO bad
     title: '',
     books: [
       {
+        title: `Quiet`,
+        desc: `The Power of Introverts in a World That Can't Stop Talking`,
+        thumb: `q.jpg`,
+        author: `Susan Cain`,
+        amazon: `https://www.amazon.com/Quiet-Power-Introverts-World-Talking/dp/0307352153`,
+        audible: `https://www.amazon.com/Quiet-Susan-Cain-audiobook/dp/B00714PZMQ`,
+        publishYear: `2013`,
+      },
+    ],
+    notes: `
+    `,
+  },
+
+  {
+    title: '',
+    books: [
+      {
         title: `Never Split the Difference`,
         desc: `Negotiating as if Your Life Depended on It`,
         thumb: `nds.jpg`,
@@ -227,6 +244,30 @@ FOMO bad
         amazon: `https://www.amazon.com/How-Minds-Change-Surprising-Persuasion/dp/0593190297  `,
         audible: `https://www.amazon.com/How-Minds-Change-Surprising-Persuasion/dp/B094RJGCRH`,
         publishYear: `2022`,
+      },
+    ],
+    notes: '',
+  },
+  {
+    title: '',
+    books: [
+      {
+        title: `Invisible Women`,
+        desc: `Data Bias in a World Designed for Men`,
+        thumb: ``,
+        author: ``,
+        amazon: ``,
+        audible: ``,
+        publishYear: ``,
+      },
+      {
+        title: `Grit`,
+        desc: `The Power of Passion and Perseverance`,
+        thumb: ``,
+        author: ``,
+        amazon: ``,
+        audible: ``,
+        publishYear: ``,
       },
     ],
     notes: '',
