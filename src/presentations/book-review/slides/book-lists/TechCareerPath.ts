@@ -14,7 +14,11 @@ export const TechCareerBookList: BookGroupInfo[] = [
         publishYear: `2022`,
       },
     ],
-    notes: '',
+    notes: `
+- Take a broad, strategic view when thinking about your work
+- Dive into practical tactics for making projects succeed
+- Determine what "good engineering" means in your organization
+`,
   },
   {
     title: '',
@@ -29,7 +33,10 @@ export const TechCareerBookList: BookGroupInfo[] = [
         publishYear: `2021`,
       },
     ],
-    notes: '',
+    notes: `
+Contains good advice on determining if you want to pursue staff or management.
+    Interviews with Staff Engineers form Dropbox, Etsy, Slack, etc.
+    `,
   },
 
   {

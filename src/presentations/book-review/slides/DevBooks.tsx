@@ -39,16 +39,18 @@ export const DevBooks = () => (
       subTitle="Valuable, but potentially boring"
     />
     <Slide>
-      <Book
-        book={{
-          title: 'If Hemingway Wrote JavaScript',
-          thumb: 'h.jpg',
-        }}
-      ></Book>
-    </Slide>
-    <Slide>
-      <h2>If Tupac Wrote JS</h2>
-      <JSX code={code} />
+      <Slide>
+        <Book
+          book={{
+            title: 'If Hemingway Wrote JavaScript',
+            thumb: 'h.jpg',
+          }}
+        ></Book>
+      </Slide>
+      <Slide>
+        <h2>If Tupac Wrote JS</h2>
+        <JSX code={code} />
+      </Slide>
     </Slide>
   </>
 );

@@ -7,7 +7,7 @@ export const DevBookList: BookGroupInfo[] = [
       {
         title: 'Agile Manifesto',
         desc: '',
-        thumb: '',
+        thumb: 'am.png',
         author: '17 people',
         amazon: 'https://agilemanifesto.org/',
         audible: '',
@@ -59,7 +59,7 @@ Part 7 - Software Craftsmanship
         title: 'Refactoring',
         desc: 'Improving the Design of Existing Code',
         thumb: 'r.jpg',
-        author: 'Martin Fowler, Kent Beck',
+        author: 'Martin Fowler*, Kent Beck*',
         amazon:
           'https://www.amazon.com/Refactoring-Improving-Existing-Addison-Wesley-Signature-dp-0134757599/dp/0134757599',
         audible: '',
@@ -68,9 +68,12 @@ Part 7 - Software Craftsmanship
     ],
     notes: `
 Mythical Man Month:
+Brook's Law
 'Adding manpower to a late software project makes it later.'
     
 Refactoring:
+Any fool can write code that a computer can understand.
+ Good programmers write code that humans can understand.
 
 This book provides reasons for refactoring, the mechanics 
 behind it and examples of refactoring
@@ -91,7 +94,7 @@ The key to effective refactoring is recognizing that you go faster when you take
         title: 'Clean Code',
         desc: 'A Handbook of Agile Software Craftsmanship',
         thumb: 'ccode.jpg',
-        author: 'Robert Martin',
+        author: 'Robert Martin*',
         amazon:
           'https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882',
         audible:
@@ -125,7 +128,7 @@ The key to effective refactoring is recognizing that you go faster when you take
         thumb: 'cagile.jpg',
         author: 'Robert Martin',
         amazon: 'https://www.amazon.com/dp/0135781868',
-        audible: '',
+        audible: 'https://www.amazon.com/Clean-Agile-Back-to-Basics/dp/B08X7FWCZM/',
         publishYear: '2019',
       },
       {
@@ -211,7 +214,7 @@ and ten specific commitments every software professional should make
         title: 'The Pragmatic Programmer',
         desc: 'Your Journey To Mastery',
         thumb: 'pp.jpg',
-        author: 'David Thomas, Andrew Hunt',
+        author: 'David Thomas*, Andrew Hunt',
         amazon:
           'https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052/',
         audible:
@@ -221,21 +224,13 @@ and ten specific commitments every software professional should make
     ],
     notes: `
 A Pragmatic Philosophy
-- Software Entropy
-- Stone Soup
-- A Pragmatic Approach
 DRY
 Orthogonality
 Tracer Bullets
 Basic Tools
 Power of Plain Text
 Shell Games
-Much Much more
-1.1 - Tip 4: Don't Live with Broken Windows
-1.2 - Be a catalyst for change
-2.2 - Eliminate Effects Between Unrelated Things
-Tracer bullets guuied to target
-
+No broken windows -> neglect accelerates the rot faster than any other factor.
 `,
   },
   

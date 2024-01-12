@@ -10,21 +10,27 @@ export interface BookItem {
 }
 export interface BookProps {
   book: BookItem;
+  isFragment: boolean;
 }
 
-export const Book = ({ book }: BookProps) => {
+export const Book = ({ book, isFragment }: BookProps) => {
   function getImageUrl(name) {
     return new URL(`/src/assets/books/${name}`, import.meta.url).href;
   }
 
   return (
-    <div className="book-item">
-      <div>{book.thumb && <img src={getImageUrl(book.thumb)} />}</div>
-      <div className="book-item_info">
-        <h3>{book.title}</h3>
-        {book.desc && <h6>{book.desc}</h6>}
-        <div className="book-item__author-info">
-          <span>{book.author}</span> | <span>{book.publishYear}</span>
+    <div className={`book-item ${isFragment ? 'fragment' : ''}`}>
+      <div className="book-item__thumb">{book.thumb && <img src={getImageUrl(book.thumb)} />}</div>
+      <div className="book-item__info">
+        <div className="book-item__meta">
+          <h5>{book.title}</h5>
+          {book.desc && <h6>{book.desc}</h6>}
+          <div className="book-item__author-info">
+            <span>{book.author}</span>
+            {book.author && book.publishYear && <span> | </span>}
+
+            <span>{book.publishYear}</span>
+          </div>
         </div>
         <div className="book-item__book-links">
           {book.amazon && (

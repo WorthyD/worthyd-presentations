@@ -1,4 +1,4 @@
-ggasdfasdfimport { BookGroupInfo } from '../components/BookGroup';
+import { BookGroupInfo } from '../components/BookGroup';
 
 export const LifeBookList: BookGroupInfo[] = [
   {
@@ -7,7 +7,7 @@ export const LifeBookList: BookGroupInfo[] = [
       {
         title: `How to Win Friends & Influence People`,
         desc: ``,
-        thumb: `hwf`,
+        thumb: `hwf.jpg`,
         author: `Dale Carnegie`,
         amazon: `https://www.amazon.com/How-Win-Friends-Influence-People/dp/8183227899`,
         audible: `https://www.amazon.com/How-Win-Friends-Influence-People/dp/B0006IU7JK`,
@@ -77,14 +77,15 @@ FOMO bad
       {
         title: `Smarter Better Faster`,
         desc: `The Secrets of Being Productive in Life and Business`,
-        thumb: `smf`,
+        thumb: `smf.jpg`,
         author: `Charles Duhigg`,
         amazon: `https://www.amazon.com/Smarter-Faster-Better-Transformative-Productivity/dp/0812983599`,
         audible: `https://www.amazon.com/Smarter-Faster-Better-audiobook/dp/B017WRCV0A/`,
         publishYear: `2016`,
       },
     ],
-    notes: `Atomic Habits is the definitive guide to breaking bad behaviors and adopting good ones in four steps, showing you how small, incremental, everyday routines compound into massive, positive change over time.
+    notes: `Atomic Habits is the definitive guide to breaking bad behaviors and adopting good ones in four steps, 
+    showing you how small, incremental, everyday routines compound into massive, positive change over time.
     `,
   },
   {
@@ -101,6 +102,8 @@ FOMO bad
       },
     ],
     notes: `
+    Highlights a lot of famous introverts
+    goes through a lot of traits of introverts and how they can be leveraged.
     `,
   },
 
@@ -110,14 +113,17 @@ FOMO bad
       {
         title: `Never Split the Difference`,
         desc: `Negotiating as if Your Life Depended on It`,
-        thumb: `nds.jpg`,
+        thumb: `nsd.jpg`,
         author: `Chris Voss`,
         amazon: `https://www.amazon.com/Never-Split-Difference-Negotiating-Depended/dp/1847941486`,
         audible: `https://www.amazon.com/Never-Split-Difference-audiobook/dp/B01COR1GM2`,
         publishYear: `2016`,
       },
     ],
-    notes: '',
+    notes: `
+Former FBI negotiator    
+
+    `,
   },
   {
     title: '',
@@ -132,7 +138,12 @@ FOMO bad
         publishYear: `1998`,
       },
     ],
-    notes: 'dirt cheap. $4 on amazon',
+    notes: `
+   Financial literacy 
+    dirt cheap. $4 on amazon
+    Claims to be 1.2 billion in debt
+    
+    `,
   },
   {
     title: '',
@@ -162,7 +173,9 @@ FOMO bad
         publishYear: `2014`,
       },
     ],
-    notes: '',
+    notes: `What stands in the way is the way
+    perception, action and will
+    `,
   },
   {
     title: 'Marie Kondo',
@@ -201,7 +214,9 @@ FOMO bad
         publishYear: `2001`,
       },
     ],
-    notes: '',
+    notes: `Result of 5 years studying 28 companies, why some failed, and some succeeded.
+    
+    Startup side of things`,
   },
   {
     title: '',
@@ -254,20 +269,11 @@ FOMO bad
       {
         title: `Invisible Women`,
         desc: `Data Bias in a World Designed for Men`,
-        thumb: ``,
-        author: ``,
-        amazon: ``,
-        audible: ``,
-        publishYear: ``,
-      },
-      {
-        title: `Grit`,
-        desc: `The Power of Passion and Perseverance`,
-        thumb: ``,
-        author: ``,
-        amazon: ``,
-        audible: ``,
-        publishYear: ``,
+        thumb: `i.jpg`,
+        author: `Caroline Criado Perez`,
+        amazon: `https://www.amazon.com/Invisible-Women-Data-World-Designed/dp/1419735217`,
+        audible: `https://www.amazon.com/Invisible-Women-audiobook/dp/B07RCZ69GP/`,
+        publishYear: `2021`,
       },
     ],
     notes: '',
@@ -285,6 +291,6 @@ FOMO bad
         publishYear: `2022`,
       },
     ],
-    notes: '',
+    notes: `stories and advice -> Ipod, the iphone, nest`,
   },
 ];

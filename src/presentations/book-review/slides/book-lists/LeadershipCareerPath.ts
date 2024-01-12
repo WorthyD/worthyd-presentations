@@ -42,7 +42,14 @@ from:https://www.oreilly.com/library/view/the-managers-path/9781491973882/
         publishYear: '2015',
       },
     ],
-    notes: '',
+    notes: `
+    Ramadi, Iraw
+    Story -> Principle -> Application to business
+    No bad teams, only bad leaders
+    How to lead up and down the chain of command.
+
+    
+    `,
   },
   {
     title: '',
@@ -59,7 +66,12 @@ from:https://www.oreilly.com/library/view/the-managers-path/9781491973882/
         publishYear: '2019',
       },
     ],
-    notes: 'free with memmbership?',
+    notes: `
+“Any organization that designs a system (defined broadly) will produce a design whose 
+structure is a copy of the organisation's communication structure.”
+—. Conway    
+Heavy Focus on Team Size, team autonomy, and ability to produce.
+    `,
   },
   {
     title: '',
@@ -88,6 +100,9 @@ from:https://www.oreilly.com/library/view/the-managers-path/9781491973882/
       },
     ],
     notes: `
+
+
+    Leaders -> 
     Te need to be save, the courage to what's right
     Great leaders sacrifice their own comfort--
     even their own survival--for the good of those in their care
@@ -110,7 +125,7 @@ from:https://www.oreilly.com/library/view/the-managers-path/9781491973882/
         publishYear: '1905?!? 2016',
       },
     ],
-    notes: '',
+    notes: `questions, attitudes and habits for managers of selfsustaining teams`,
   },
   {
     title: '',
@@ -125,7 +140,11 @@ from:https://www.oreilly.com/library/view/the-managers-path/9781491973882/
         publishYear: '5th century BC',
       },
     ],
-    notes: ' Leadership strategies, resource management, knowing yourself, knowing your opponent, win without battle    ',
+    notes: ` 
+    timeless wisdom about strategy, leadership, and conflict 
+    resolution that can be applied to various aspects of life beyond the military.
+
+    Leadership strategies, resource management, knowing yourself, knowing your opponent, win without battle    `,
   },
 
   {

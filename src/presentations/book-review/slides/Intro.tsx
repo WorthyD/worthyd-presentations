@@ -19,6 +19,7 @@ export const Intro = () => {
           <li className="fragment">Team/Lifestyle Books</li>
           <li className="fragment">'Fun' Reads</li>
         </ul>
+        <Note>Something for everyone</Note>
       </Slide>
       <Slide>
         <h2>Biases</h2>
@@ -38,20 +39,24 @@ export const Intro = () => {
             resources.
           </p>
           <ul>
-            <li>Online documentation was terrible</li>
-            <li>Stack Overflow wasn't a thing until Sept 2008</li>
-            <li>
+            <li className="fragment">Online documentation was terrible</li>
+            <li className="fragment">
+              Stack Overflow wasn't a thing until Sept 2008
+            </li>
+            <li className="fragment">
               Community hadn't embraced open source or knowledge sharing (at
               least in the ASP.NET world)
             </li>
-            <li>Coding books you owned were most likely from college</li>
+            <li className="fragment">
+              Coding books you owned were most likely from college
+            </li>
           </ul>
         </Slide>
         <Slide>
-          <img src={getImageUrl('./src/assets/book1.png')} />
+          <img src={getImageUrl('/src/assets/books/book1.png')} />
         </Slide>
         <Slide>
-          <img src={getImageUrl('./src/assets/book1-use.png')} />
+          <img src={getImageUrl('/src/assets/books/book1-use.png')} />
         </Slide>
       </Slide>
       <Slide>
@@ -69,11 +74,30 @@ export const Intro = () => {
       </Slide>
       <Slide>
         <h2>Guess What?</h2>
-        <h3 className="fragment">I don't enjoy reading. It's hard.</h3>
-        <h3 className="fragment">I listen to almost all my books....</h3>
-        <h3 className="fragment">at 1.75 speed.</h3>
+        <h4 className="fragment">I don't enjoy reading. It's hard.</h4>
+        <h4 className="fragment">I listen to almost all my books....</h4>
+        <h4 className="fragment">at 1.75 speed.</h4>
+
+        <Note>
+          <ul>
+            <li>Listen doing chores</li>
+            <li>Listen in car rider line</li>
+            <li>D2 Strikes</li>
+          </ul>
+        </Note>
       </Slide>
-      <Slide>Audible, value, when to listen</Slide>
+      <Slide>
+        <h3>Invest in an <br />Audible subscription</h3>
+        <Note>
+          <ul>
+            <li>$15 a month</li>
+            <li>Some physical books are $50</li>
+            <li>Some books are only $8 with a subscription</li>
+            <li>Some books are free with subscription</li>
+            <li>PDFs</li>
+          </ul>
+        </Note>
+      </Slide>
     </>
   );
 };
