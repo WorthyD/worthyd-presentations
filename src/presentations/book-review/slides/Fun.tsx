@@ -22,8 +22,8 @@ export const Fun = () => {
           <Note>
             <p>LucasArts Entertainment, edits to maniac mansion </p>
             <p>
-            Script Creation Utility for Maniac Mansion = scumm
-            didn't object to being able to put a hamster in the microwave
+              Script Creation Utility for Maniac Mansion = scumm didn't object
+              to being able to put a hamster in the microwave
             </p>
           </Note>
         </Slide>
@@ -111,20 +111,82 @@ export const Fun = () => {
       <Slide>
         <h3>Band of Brothers / Pacific</h3>
         <ul>
-          <li className="fragment">Band of Brothers</li>
-          <li className="fragment">Beyond Band of Brothers</li>
-          <li className="fragment">Parachute Infantry</li>
-          <li className="fragment">Brothers in Battle, Best of Friends</li>
-          <li className="fragment">Hang Tough</li>
-          <li className="fragment">Helmet for My Pillow</li>
-          <li className="fragment">Red Blood, Black Sand: from Boot Camp to Iwo Jima</li>
-          <li className="fragment">With the Old Breed</li>
+          <li className="fragment">
+            <a
+              href="https://www.amazon.com/Band-Brothers-Regiment-Airborne-Normandy/dp/1501179403/"
+              target="_blank"
+            >
+              Band of Brothers
+            </a>
+          </li>
+          <li className="fragment">
+            <a
+              href="https://www.amazon.com/Beyond-Band-Brothers-Memoirs-Winters/dp/0425213757"
+              target="_blank"
+            >
+              Beyond Band of Brothers
+            </a>
+          </li>
+          <li className="fragment">
+            <a
+              href="https://www.amazon.com/Parachute-Infantry-American-Paratroopers-Memoir/dp/0385336497"
+              target="_blank"
+            >
+              Parachute Infantry
+            </a>
+          </li>
+          <li className="fragment">
+            <a
+              href="https://www.amazon.com/Brothers-Battle-Best-Friends-Paratroopers/dp/0425224368"
+              target="_blank"
+            >
+              Brothers in Battle, Best of Friends
+            </a>
+          </li>
+          <li className="fragment">
+            <a
+              href="https://www.amazon.com/Hang-Tough-Letters-Artifacts-Winters/dp/1682619176"
+              target="_blank"
+            >
+              Hang Tough
+            </a>
+          </li>
+          <li className="fragment">
+            <a
+              href="https://www.amazon.com/Helmet-My-Pillow-Parris-Pacific/dp/107062117X"
+              target="_blank"
+            >
+              Helmet for My Pillow
+            </a>
+          </li>
+          <li className="fragment">
+            <a
+              href="https://www.amazon.com/Red-Blood-Black-Sand-Alongside/dp/0425257428"
+              target="_blank"
+            >
+              Red Blood, Black Sand: from Boot Camp to Iwo Jima
+            </a>
+          </li>
+          <li className="fragment">
+            <a
+              href="https://www.amazon.com/Old-Breed-At-Peleliu-Okinawa/dp/0891419063/"
+              target="_blank"
+            >
+              With the Old Breed
+            </a>
+          </li>
         </ul>
         <Note>
           <p>
-            David Webster - Parachute<br />
-            Babe Heffron and Bill Guarnere<br />
-            Red Blood, Black Sand: Fighting Alongside John Basilone from Boot Camp to Iwo Jima
+            David Webster - Parachute
+            <br />
+            Babe Heffron and Bill Guarnere
+            <br />
+            Chuck Tatum -Red Blood, Black Sand: Fighting Alongside John Basilone
+            from Boot Camp to Iwo Jima -
+            <br />
+            Remain firmly resolved, as in We're going to hang tough on this
+            point and not give in. “aggressively unyielding,”
           </p>
         </Note>
       </Slide>
