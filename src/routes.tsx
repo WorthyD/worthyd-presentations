@@ -6,8 +6,8 @@ import BookReview from './presentations/book-review/bookreview';
 export function AppRoutes() {
     return (
         <Routes>
-            <Route element={<LayoutMain />}>
-                <Route path="" element={<Home />} />
+            <Route path="/" element={<LayoutMain />}>
+                <Route  index element={<Home />} />
                 <Route path="ui" element={<UILibraries />} />
                 <Route path="books" element={<BookReview />} />
             </Route>

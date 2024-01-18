@@ -100,7 +100,9 @@ Heavy Focus on Team Size, team autonomy, and ability to produce.
       },
     ],
     notes: `
-
+    Why -> Your purpose
+    How -> Your Process, specific actions to realize your why
+    What -> What you do, the result of why
 
     Leaders -> 
     Te need to be save, the courage to what's right
