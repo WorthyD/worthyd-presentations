@@ -19,5 +19,5 @@ export default defineConfig({
     },
     outDir: path.join(__dirname, 'dist'),
   },
-  base: '/worthyd-presentations/',
+  base: '/',
 });
