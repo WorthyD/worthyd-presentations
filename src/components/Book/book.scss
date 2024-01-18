@@ -1,0 +1,51 @@
+.reveal {
+  .book-item {
+    --r-heading-margin: 0;
+    display: flex;
+    &__thumb {
+      margin-right: 1rem;
+      
+    }
+
+    img {
+      --r-block-margin: 0;
+    }
+    h5 {
+      text-align: left;
+      font-size: 0.50em;
+      margin-bottom: 0;
+    }
+    h6 {
+      text-align: left;
+      text-transform: none;
+      font-size: 0.3em;
+    }
+
+    &__meta {
+      margin-bottom: 20px;
+    }
+    &__author-info {
+      text-align: left;
+      margin-top: 1rem;
+      font-style: italic;
+      font-size: 0.3em;
+    }
+    &__book-links {
+      text-align: right;
+      font-size: 0.4em;
+      a[target='_blank'] {
+        margin-right: 5px;
+      }
+      a[target='_blank']:after {
+        top: -5px;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .book-item__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
