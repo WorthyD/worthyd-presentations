@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter basename='/worthyd-presentations/'>
+      <BrowserRouter >
         <AppRoutes />
       </BrowserRouter>
     </>
