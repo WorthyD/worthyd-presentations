@@ -10,7 +10,7 @@ export interface BookItem {
 }
 export interface BookProps {
   book: BookItem;
-  isFragment: boolean;
+  isFragment?: boolean;
 }
 
 export const Book = ({ book, isFragment }: BookProps) => {

@@ -147,7 +147,12 @@ Can be a really hard read
         publishYear: `2015`,
       },
     ],
-    notes: '',
+    notes: `
+    Planning is useful, blindly following plans is stupid
+    inspect and adapt
+    change or die
+    fail fast so you can fix early
+    `,
   },
   {
     title: '',

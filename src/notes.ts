@@ -137,7 +137,9 @@ let RevealNotes = (function () {
         if (fragmentNotes) {
           notesElement = fragmentNotes;
         } else if (fragmentElement.hasAttribute('data-notes')) {
-          messageData.notes = fragmentElement.getAttribute('data-notes') as string;
+          messageData.notes = fragmentElement.getAttribute(
+            'data-notes'
+          ) as string;
           messageData.whitespace = 'pre-wrap';
 
           // In case there are slide notes
@@ -177,6 +179,7 @@ let RevealNotes = (function () {
   }
 
   return {
+    id: 'notes',
     init: function () {
       if (!/receiver/i.test(window.location.search)) {
         // If the there's a 'notes' query set, open directly
@@ -198,4 +201,4 @@ let RevealNotes = (function () {
   };
 })();
 
-Reveal.registerPlugin('notes', RevealNotes);
+Reveal.registerPlugin(RevealNotes);

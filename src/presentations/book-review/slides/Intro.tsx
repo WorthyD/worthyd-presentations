@@ -2,7 +2,7 @@ import { Slide } from '../../../components/Slide';
 import { Note } from '~/components/Notes';
 export const Intro = () => {
   function getImageUrl(name) {
-    return new URL(name, import.meta.url).href;
+    return new URL(`/src/assets/books/${name}`, import.meta.url).href;
   }
   return (
     <>
@@ -63,11 +63,11 @@ export const Intro = () => {
           <Note>C++ for you++</Note>
         </Slide>
         <Slide>
-          <img src={getImageUrl('/src/assets/books/book1.png')} />
+          <img src={getImageUrl('book.png')} />
           <Note>I did pay the $65 for the book</Note>
         </Slide>
         <Slide>
-          <img src={getImageUrl('/src/assets/books/book1-use.png')} />
+          <img src={getImageUrl('bookuse.png')} />
           <Note>
             Pretty discouraged from investing in tech literature after this.
           </Note>
