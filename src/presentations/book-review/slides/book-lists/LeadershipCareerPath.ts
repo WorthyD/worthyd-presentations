@@ -117,7 +117,7 @@ Heavy Focus on Team Size, team autonomy, and ability to produce.
       {
         title: `The Coaching Habit`,
         desc: 'Say Less, Ask More & Change the Way You Lead Forever',
-        thumb: '',
+        thumb: 'ch.jpg',
         author: 'Michael Bungay Stanier',
         amazon:
           'https://www.amazon.com/Coaching-Habit-Less-Change-Forever-dp-1989603610/dp/1989603610',

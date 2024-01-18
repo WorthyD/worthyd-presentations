@@ -88,6 +88,23 @@ The key to effective refactoring is recognizing that you go faster when you take
     `,
   },
   {
+    title: '',
+    books: [
+      {
+        title: 'Code',
+        desc: 'The Hidden Language of Computer Hardware and Software',
+        thumb: 'c.jpg',
+        author: 'Charles Petzold',
+        amazon:
+          'https://www.amazon.com/Code-Language-Computer-Hardware-Software-dp-0137909101/dp/0137909101/',
+        audible: '',
+        publishYear: '2000',
+      },
+    ],
+    notes: `
+    `,
+  },
+  {
     title: 'Uncle Bob',
     books: [
       {
@@ -128,7 +145,8 @@ The key to effective refactoring is recognizing that you go faster when you take
         thumb: 'cagile.jpg',
         author: 'Robert Martin',
         amazon: 'https://www.amazon.com/dp/0135781868',
-        audible: 'https://www.amazon.com/Clean-Agile-Back-to-Basics/dp/B08X7FWCZM/',
+        audible:
+          'https://www.amazon.com/Clean-Agile-Back-to-Basics/dp/B08X7FWCZM/',
         publishYear: '2019',
       },
       {
@@ -141,8 +159,14 @@ The key to effective refactoring is recognizing that you go faster when you take
         audible: '',
         publishYear: '2021',
       },
+      {
+        title: 'Functional Design',
+        desc: 'Disciplines, Standards, and Ethics',
+        publishYear: '2023',
+      },
     ],
     notes: `
+    Bob started programming in the 1970s
     Clean Code:
     Definition of clean code
 Meaningful Variable Names
@@ -233,5 +257,4 @@ Shell Games
 No broken windows -> neglect accelerates the rot faster than any other factor.
 `,
   },
-  
 ];

@@ -10,6 +10,10 @@ export const Fun = () => {
     <>
       <Slide>
         <Slide>
+          <h3>The 'Fun' Books</h3>
+          <h4 className="fragment">Ok... it's a bunch of video game books</h4>
+        </Slide>
+        <Slide>
           <Book
             book={{
               title:
@@ -72,6 +76,15 @@ export const Fun = () => {
               publishYear: `2014 - Present`,
             }}
           ></Book>
+          <Note>
+            <ul>
+              <li>SMB3</li>
+              <li>NBA Jam</li>
+              <li>WoW</li>
+              <li>Goldeneye</li>
+              <li></li>
+            </ul>
+          </Note>
         </Slide>
         <Slide>
           <Book

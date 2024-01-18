@@ -52,6 +52,6 @@ Contains good advice on determining if you want to pursue staff or management.
         publishYear: `2021`,
       },
     ],
-    notes: '',
+    notes: 'Struggled on where to put this. References a lot of other books on this lis',
   },
 ];

@@ -261,7 +261,8 @@ Former FBI negotiator
         publishYear: `2022`,
       },
     ],
-    notes: '',
+    notes: `1400s it was believed the barnacle goose came from the goose barnacle
+     They didn't know or understand geese migration `,
   },
   {
     title: '',
