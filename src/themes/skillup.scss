@@ -1,15 +1,4 @@
-@import '/node_modules/reveal.js/css/theme/template/settings.scss';
-
-a[target='_blank']:after {
-  font-family: 'FontAwesome';
-  content: ' \f08e';
-  font-size: 0.6em;
-  display: inline-block;
-  position: relative;
-  top: -10px;
-  margin-left: 10px;
-}
-:root .theme-default {
+:root .theme-skillup {
   --r-background-color: #353535;
   --r-main-font: Helvetica, Arial, sans-serif;
   --r-main-font-size: 42px;

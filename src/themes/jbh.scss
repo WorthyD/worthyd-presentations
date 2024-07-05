@@ -1,78 +1,32 @@
-/**
- * A simple theme for reveal.js presentations, similar
- * to the default theme. The accent color is darkblue.
- *
- * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
- * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
- */
-@import 'base.scss';
-// Default mixins and settings -----------------
-@import '/node_modules/reveal.js/css/theme/template/mixins.scss';
-@import '/node_modules/reveal.js/css/theme/template/settings.scss';
-// ---------------------------------------------
-
-@import '/node_modules/reveal.js/dist/theme/fonts/source-sans-pro/source-sans-pro.css';
-
-// Override theme settings (see ../template/settings.scss)
-$backgroundColor: #fff;
-
-$mainColor: #222;
-$headingColor: #222;
-
-$mainFontSize: 42px;
-$mainFont: Helvetica, Arial, sans-serif;
-$headingFont: Helvetica, Arial, sans-serif;
-$headingTextShadow: none;
-$headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
-$headingFontWeight: 500;
-$linkColor: #007dba;
-$linkColorHover: lighten($linkColor, 5%);
-$selectionBackgroundColor: lighten($linkColor, 15%);
-
-$heading1Size: 2em;
-$heading2Size: 1.2em;
-$heading3Size: 1.2em;
-$heading4Size: .8em;
-
-// Change text colors against dark slide backgrounds
-@include dark-bg-text-color(#fff);
-
-// Theme template ------------------------------
-@import '/node_modules/reveal.js/css/theme/template/theme.scss';
-// ---------------------------------------------
-
-.reveal {
-  pre {
-    font-size: 1rem;
-  }
-}
-:root {
-  --r-background-color: #{$backgroundColor};
-  --r-main-font: #{$mainFont};
-  --r-main-font-size: #{$mainFontSize};
-  --r-main-color: #{$mainColor};
-  --r-block-margin: #{$blockMargin};
-  --r-heading-margin: #{$headingMargin};
-  --r-heading-font: #{$headingFont};
-  --r-heading-color: #{$headingColor};
-  --r-heading-line-height: #{$headingLineHeight};
-  --r-heading-letter-spacing: #{$headingLetterSpacing};
-  --r-heading-text-transform: #{$headingTextTransform};
-  --r-heading-text-shadow: #{$headingTextShadow};
-  --r-heading-font-weight: #{$headingFontWeight};
-  --r-heading1-text-shadow: #{$heading1TextShadow};
-  --r-heading1-size: #{$heading1Size};
-  --r-heading2-size: #{$heading2Size};
-  --r-heading3-size: #{$heading3Size};
-  --r-heading4-size: #{$heading4Size};
-  --r-code-font: #{$codeFont};
-  --r-link-color: #{$linkColor};
-  --r-link-color-dark: #{darken($linkColor, 15%)};
-  --r-link-color-hover: #{$linkColorHover};
-  --r-selection-background-color: #{$selectionBackgroundColor};
-  --r-selection-color: #{$selectionColor};
-  //  --r-overlay-element-bg-color: #{$overlayElementBgColor};
-  //  --r-overlay-element-fg-color: #{$overlayElementFgColor};
+:root .theme-jbh {
+  --r-background-color: #353535;
+  --r-main-font: Helvetica, Arial, sans-serif;
+  --r-main-font-size: 42px;
+  --r-main-color: #fff;
+  --r-block-margin: 20px;
+  --r-heading-margin: 0 0 20px 0;
+  --r-heading-font: Helvetica, Arial, sans-serif;
+  --r-heading-color: #fff;
+  --r-heading-line-height: 1.2;
+  --r-heading-letter-spacing: normal;
+  --r-heading-text-transform: uppercase;
+  --r-heading-text-shadow: none;
+  --r-heading-font-weight: 500;
+  --r-heading1-text-shadow: none;
+  --r-heading1-size: 2em;
+  --r-heading2-size: 1.2em;
+  --r-heading3-size: 1.2em;
+  --r-heading4-size: 0.8em;
+  --r-code-font: monospace;
+  --r-link-color: #007dba;
+  --r-link-color-dark: #004a6e;
+  --r-link-color-hover: #008ed4;
+  --r-selection-background-color: #08aeff;
+  --r-selection-color: #fff;
   --r-sub-heading-color: #252525;
+  .reveal {
+    pre {
+      font-size: 1rem;
+    }
+  }
 }

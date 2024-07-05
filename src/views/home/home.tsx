@@ -12,8 +12,12 @@ const Home = () => (
         </li>
 
         <li>
-          <NavLink to="/books">Book Review</NavLink> - Massive list of books developers should read.
+          <NavLink to="/jbh/books">Book Review</NavLink> - Massive list of books developers should read.
         </li>
+        <li>
+          <NavLink to="/jbh/providers">I Can Provide That</NavLink> - Provider presentation
+        </li>
+
       </ul>
     </div>
   </section>
