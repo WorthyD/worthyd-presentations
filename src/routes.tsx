@@ -15,7 +15,6 @@ const UILibraries = lazy(
 const BookReview = lazy(() => import('./presentations/book-review/bookreview'));
 const Providers = lazy(() => import('./presentations/providers/Providers'));
 //import Providers from './presentations/providers/Providers';
-import './themes/themes.scss';
 
 export function AppRoutes() {
   return (

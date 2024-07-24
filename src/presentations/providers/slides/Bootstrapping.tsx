@@ -41,7 +41,6 @@ const standAloneComponentProviding = `
   }
 `;
 
-
 const httpClientModule = `
   @NgModule({
     declarations: [AppComponent],
@@ -58,7 +57,7 @@ const httpClientModule = `
     bootstrap: [AppComponent],
   })
   export class AppModule {}
-`
+`;
 
 const httpClientStandalone = `
   //apps/standalone-app/src/app/app.config.ts
@@ -76,7 +75,7 @@ const httpClientStandalone = `
     ],
   };
   
-`
+`;
 
 const standAloneAppProviding = `
   //apps/standalone-app/src/app/app.config.ts
@@ -88,6 +87,7 @@ const standAloneAppProviding = `
       // Providing HTTP Client
       provideHttpClient(),
 
+      // HttpClientModule deprecated in NG18
       importProvidersFrom(HttpClientModule),
     ],
   };
@@ -101,6 +101,26 @@ const standAloneAppProviding = `
   bootstrapApplication(AppComponent, appConfig).catch((err) =>
     console.error(err)
   );
+`;
+const httpInterceptors = `
+  //apps/standalone-app/src/app/app.config.ts
+  import { withInterceptors, withInterceptorsFromDi, provideHttpClient } from '@angular/common/http';
+  export const appConfig: ApplicationConfig = {
+    providers: [
+
+      provideHttpClient(
+        withInterceptors([ApiKeyInterceptor])
+      )
+      // or 
+      // noted may be phased out.
+      {
+        provide: HTTP_INTERCEPTORS,
+        useClass: ApiKeyInterceptorClass, // Class based interceptor
+        multi: true
+      },
+      provideHttpClient(withInterceptorsFromDi())
+    ],
+  };
 `;
 
 const libProvide = `
@@ -120,7 +140,7 @@ export const Bootstrapping = () => {
     return new URL(`/src/assets/providers/${name}`, import.meta.url).href;
   }
   return (
-    <Slide>
+    <>
       <Slide>
         <h2>Bootstrapping</h2>
       </Slide>
@@ -141,15 +161,15 @@ export const Bootstrapping = () => {
         <h2>HttpClientModule w/ Interceptors</h2>
         <TSX code={httpClientStandalone} />
       </Slide>
- 
+
       <Slide>
         <h2>Provide a Provider</h2>
         <TSX code={libProvide} />
       </Slide>
-      
+
       <Slide>
         <h2>Demo</h2>
       </Slide>
-    </Slide>
+    </>
   );
 };

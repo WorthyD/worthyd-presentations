@@ -1,3 +1,4 @@
+import { Note } from '~/components/Notes';
 import { Slide } from '../../../components/Slide';
 
 import { TSX } from '../../../components/SyntaxHighlight';
@@ -36,6 +37,22 @@ const baseDesiredService = `
         }
     }
 `;
+const useValueExample = `
+ TestBed.configureTestingModule({
+  declarations: [AppComponent],
+  providers: [
+    {
+      provide: MyTestDataService,
+      useValue: {
+        getData: jest.fn().mockReturnValue('abc123'),
+        getSomeOtherValue: jest.fn().mockReturnValue({}),
+      },
+    },
+  ],
+  });
+
+`;
+
 const tokenDeclaration = `
     import { InjectionToken, ValueProvider } from '@angular/core';
 
@@ -77,8 +94,8 @@ const useClass = `
   @NgModule({
       providers: [
           {
-              provide: MyTestDataService,  //<-- implements MyTestDataServiceInterface
-              useClass: MyTestDataMockService //<-- implements MyTestDataServiceInterface
+              provide: MyTestDataService,  
+              useClass: MyTestDataMockService 
           }
       ],
   })
@@ -88,17 +105,15 @@ const useClass = `
 const useExisting = `
   @NgModule({
       providers: [
-        MyTestDataService,
-          {
-              provide: MyTestDataMockService,  
-              useExisting: MyTestDataService 
-          }
+        Security2Point0Service,
+        {
+            provide: SecurityService,  
+            useExisting: Security2Point0Service 
+        }
       ],
   })
   export class AppModule {}
-
 `;
-
 
 const useFactory = `
   import { HttpClient } from '@angular/common/http';
@@ -132,13 +147,12 @@ const useFactoryExample = `
   export class AppModule {}
 `;
 
-
 export const DependencyInjection = () => {
   function getImageUrl(name) {
     return new URL(`/src/assets/providers/${name}`, import.meta.url).href;
   }
   return (
-    <Slide>
+    <>
       <Slide>
         <h2>Dependency Injection Providers</h2>
         <ul>
@@ -185,7 +199,11 @@ export const DependencyInjection = () => {
         <TSX code={baseDesiredService} />
       </Slide>
       <Slide>
+        <h2>useValue</h2>
         <TSX code={tokenDeclaration} />
+        <Note>
+          Must be static value
+        </Note>
       </Slide>
 
       <Slide>
@@ -193,13 +211,25 @@ export const DependencyInjection = () => {
       </Slide>
 
       <Slide>
+        <TSX code={useValueExample} />
+      </Slide>
+
+      <Slide>
         <h2>useClass</h2>
         <TSX code={useClass} />
+        <Note>
+          Must be a class, can't be an interface <br />
+          Will use standard DI for dependencies
+        </Note>
       </Slide>
 
       <Slide>
         <h2>useExisting</h2>
         <TSX code={useExisting} />
+        <Note>
+          Use for hiding implementation <br />
+          abstract class vs 1K line file
+        </Note>
       </Slide>
       <Slide>
         <h2>useFactory</h2>
@@ -210,8 +240,7 @@ export const DependencyInjection = () => {
         <TSX code={useFactoryExample} />
       </Slide>
 
-
-{/* 
+      {/* 
       <Slide>
         <h2>The Fix</h2>
         <ul>
@@ -241,8 +270,13 @@ export const DependencyInjection = () => {
         <img src={getImageUrl('provide-in-module-component.drawio.png')} />
       </Slide> */}
       <Slide>
-        <h2>Demo</h2>
+      <a
+            href="https://stackblitz.com/~/github.com/WorthyD/worthyd-sandbox?file=apps/worthyd-standalone/src/app/app.config.ts"
+            target="_blank"
+          >
+            Demo
+          </a>
       </Slide>
-    </Slide>
+    </>
   );
 };

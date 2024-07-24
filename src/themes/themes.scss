@@ -1,7 +1,30 @@
 //@import '/node_modules/reveal.js/css/theme/template/theme.scss';
 // @import '/node_modules/reveal.js/dist/theme/fonts/source-sans-pro/source-sans-pro.css';
+
 @import './base.scss';
 @import './jbh.scss';
 @import './skillup.scss';
 
 @import '/node_modules/reveal.js/css/theme/template/theme.scss';
+.reveal {
+  pre {
+    font-size: 1rem;
+  }
+}
+.small-text {
+  font-size: 24px;
+  .reveal {
+    pre {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+.two-col {
+  display: flex;
+  align-items: center;
+}
+
+.two-col > div {
+  flex: 1;
+}

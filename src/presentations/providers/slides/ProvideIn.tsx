@@ -1,6 +1,7 @@
 import { Slide } from '../../../components/Slide';
 
 import { TSX } from '../../../components/SyntaxHighlight';
+import { Note } from '../../../components/Notes';
 
 const stuff = `
   // my-test-component.component.ts
@@ -41,12 +42,12 @@ const provideInRoot = `
 `;
 
 const provideInModule = `
-import { MyTestDataService } from './my-test-data.service';
+  import { MyTestDataService } from './my-test-data.service';
 
-@NgModule({
-  providers: [MyTestDataService],
-})
-export class AppModule {}
+  @NgModule({
+    providers: [MyTestDataService],
+  })
+  export class AppModule {}
 `;
 
 const provideInComponent = `
@@ -79,7 +80,7 @@ export const ProvideIn = () => {
     return new URL(`/src/assets/providers/${name}`, import.meta.url).href;
   }
   return (
-    <Slide>
+    <>
       <Slide>
         <h2>Let's Use A Service</h2>
         <TSX code={stuff} />
@@ -89,28 +90,51 @@ export const ProvideIn = () => {
         <img src={getImageUrl('no-provider.png')} />
       </Slide>
       <Slide>
-        <h2>The Fix</h2>
+        <h2>What's causing this and how can we fix it?</h2>
+        <Note>
+          The service needs to be setup to be injected into so that Angular
+          knows to serve it up
+        </Note>
+      </Slide>
+      <Slide>
+        <h2>Ways to Provide a Block of Code</h2>
         <ul>
           <li className="fragment">Provide in Root</li>
           <li className="fragment">Provide in Component</li>
-          <li className="fragment">Provide in Application Config</li>
           <li className="fragment">Provide in Module</li>
+          <li className="fragment">Provide in Application Config</li>
         </ul>
       </Slide>
       <Slide>
         <h2>Provide In Root</h2>
-        <p>Tree Shaking - not used, never created</p>
-        <TSX code={provideInRoot} />
-      </Slide>
-      <Slide>
-        <h2>Provide In Component</h2>
-        <p>Provided even if it's not used</p> 
-        <TSX code={provideInComponent} />
-      </Slide>
 
+        <div className="two-col small-text">
+          <div>
+            <TSX code={provideInRoot} />
+          </div>
+          <div>
+            <ul className="">
+              <li className="fragment">Introduced in Angular 6</li>
+              <li className="fragment">Out of the box w/ CLI</li>
+              <li className="fragment">Tree Shakeable</li>
+              <li className="fragment">Provided everywhere it is imported</li>
+              <li className="fragment">Globally scoped</li>
+            </ul>
+          </div>
+        </div>
+      </Slide>
       <Slide>
         <h2>Provide In Root</h2>
         <img src={getImageUrl('provide-in-root.drawio.png')} />
+      </Slide>
+      <Slide>
+        <h2>Provide In Component</h2>
+        <TSX code={provideInComponent} />
+        {/* <ul>
+          <li className="fragment">
+            Isolated to the component & child components
+          </li>
+        </ul> */}
       </Slide>
       <Slide>
         <h2>Provide In Module</h2>
@@ -121,8 +145,15 @@ export const ProvideIn = () => {
         <img src={getImageUrl('provide-in-module-component.drawio.png')} />
       </Slide>
       <Slide>
-        <h2>Demo</h2>
+        <h2>
+          <a
+            href="https://stackblitz.com/~/github.com/WorthyD/worthyd-sandbox?file=apps/worthyd-module/src/app/app.module.ts"
+            target="_blank"
+          >
+            Demo
+          </a>
+        </h2>
       </Slide>
-    </Slide>
+    </>
   );
 };

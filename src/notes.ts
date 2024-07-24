@@ -28,7 +28,7 @@ let RevealNotes = (function () {
         document.querySelector('script[src^="/src/notes.ts"]') as any
       ).src as any; // this js file path
       jsFileLocation = jsFileLocation.replace(/notes\.ts(\?.*)?$/, ''); // the js folder path
-      notesFilePath = 'notes.html';
+      notesFilePath = '/notes.html';
     }
 
     notesPopup = window.open(

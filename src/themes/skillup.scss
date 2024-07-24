@@ -1,15 +1,15 @@
-:root .theme-skillup {
-  --r-background-color: #353535;
+:root.theme-skillup {
+  --r-background-color: #fff;
   --r-main-font: Helvetica, Arial, sans-serif;
   --r-main-font-size: 42px;
-  --r-main-color: #fff;
+  --r-main-color: #000;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
   --r-heading-font: Helvetica, Arial, sans-serif;
-  --r-heading-color: #fff;
+  --r-heading-color: #000;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
-  --r-heading-text-transform: uppercase;
+  --r-heading-text-transform: normal;
   --r-heading-text-shadow: none;
   --r-heading-font-weight: 500;
   --r-heading1-text-shadow: none;
@@ -23,9 +23,5 @@
   --r-link-color-hover: #008ed4;
   --r-selection-background-color: #08aeff;
   --r-selection-color: #fff;
-  .reveal {
-    pre {
-      font-size: 1rem;
-    }
-  }
+  
 }

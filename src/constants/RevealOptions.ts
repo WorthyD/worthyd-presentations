@@ -66,7 +66,7 @@ export default {
   // key is pressed
   help: true,
 
-  // Flags if speaker notes should be visible to all viewers
+  // Flags if speaker note should be visible to all viewers
   showNotes: false,
 
   // Global override for autoplaying embedded media (video/audio/iframe)

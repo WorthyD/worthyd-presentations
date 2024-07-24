@@ -1,23 +1,26 @@
-import Highlight, { defaultProps, Language } from 'prism-react-renderer';
-import theme from 'prism-react-renderer/themes/nightOwl';
+import { Highlight, themes, Language } from 'prism-react-renderer';
 
 interface BaseSyntaxHighlightProps {
-    code?: string;
-    language: Language;
+  code?: string;
+  language: Language;
 }
 
-export const BaseSyntaxHighlight = ({ code = '', language }: BaseSyntaxHighlightProps) => (
-    <Highlight {...defaultProps} language={language} code={code} theme={theme}>
-        {({ className, style, tokens, getLineProps, getTokenProps }) => (
-            <pre className={className} style={style}>
-                {tokens.map((line, i) => (
-                    <div {...getLineProps({ line, key: i })} data-line-numbers>
-                        {line.map((token, key) => (
-                            <span {...getTokenProps({ token, key })} />
-                        ))}
-                    </div>
-                ))}
-            </pre>
-        )}
-    </Highlight>
+export const BaseSyntaxHighlight = ({
+  code = '',
+  language,
+}: BaseSyntaxHighlightProps) => (
+  <Highlight language={language} code={code} theme={themes.nightOwl}>
+    {({ className, style, tokens, getLineProps, getTokenProps }) => (
+      <pre className={className} style={style}>
+        {tokens.map((line, i) => (
+          <div key={i} {...getLineProps({ line })}>
+            {/* <span>{i + 1}</span> */}
+            {line.map((token, key) => (
+              <span key={key} {...getTokenProps({ token })} />
+            ))}
+          </div>
+        ))}
+      </pre>
+    )}
+  </Highlight>
 );
