@@ -18,5 +18,15 @@ export const Intro = () => (
         <li className="fragment">Bootstrapping an App</li>
       </ul>
     </Slide>
+    <Slide>
+      <h2>Why are we going going to look at this?</h2>
+      <ul>
+        <li className="fragment">Back to basics</li>
+        <li className="fragment">Standalone Components/Apps</li>
+        <li className="fragment">Angular Updates (17+)</li>
+      </ul>
+    </Slide>
+
+
   </>
 );
