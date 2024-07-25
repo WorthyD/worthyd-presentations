@@ -4,13 +4,15 @@ import 'reveal.js/dist/reveal.css';
 import '../themes/themes.scss';
 import revealOptions from '../constants/RevealOptions';
 import { useParams } from 'react-router-dom';
-
+import mermaid from 'mermaid';
 interface LayoutDeckProps {
   options?: any;
   children: ReactNode;
 }
 const themes = ['skillup', 'jbh'];
-
+mermaid.initialize({
+  startOnLoad: true,
+});
 const LayoutDeck = ({ options, children }: LayoutDeckProps) => {
   let params = useParams();
 
@@ -29,6 +31,9 @@ const LayoutDeck = ({ options, children }: LayoutDeckProps) => {
     }).then(() => {
       Reveal.removeKeyBinding(27);
     });
+    mermaid.contentLoaded();
+
+ 
   }, []);
 
   useMemo(() => {

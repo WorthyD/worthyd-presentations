@@ -2,6 +2,7 @@ import { Slide } from '../../../components/Slide';
 
 import { TSX } from '../../../components/SyntaxHighlight';
 import { Note } from '../../../components/Notes';
+import { Mermaid } from '../../../components/Mermaid';
 
 const stuff = `
   // my-test-component.component.ts
@@ -123,10 +124,31 @@ export const ProvideIn = () => {
           </div>
         </div>
       </Slide>
-      <Slide>
+      {/* <Slide>
         <h2>Provide In Root</h2>
         <img src={getImageUrl('provide-in-root.drawio.png')} />
+      </Slide> */}
+      <Slide>
+        <h2>Provide In Root</h2>
+        <Mermaid chart={`
+         stateDiagram-v2
+         Application -->  Root_Scope
+          Root_Scope: Root Scope
+         state Root_Scope {
+            
+             [*] --> Component_1
+             [*] --> Component_2
+             [*] --> Component_3
+             
+             Component_1: Component 1
+             Component_2: Component 2
+             Component_3: Component 3
+         }
+ 
+     
+        `}></Mermaid>
       </Slide>
+ 
       <Slide>
         <h2>Provide In Component</h2>
         <TSX code={provideInComponent} />
@@ -144,6 +166,38 @@ export const ProvideIn = () => {
         <h2>Provide In Component/Module</h2>
         <img src={getImageUrl('provide-in-module-component.drawio.png')} />
       </Slide>
+      <Slide>
+        <h2>Provide In Root</h2>
+        <Mermaid chart={`
+         stateDiagram-v2
+         state Application {
+             Component_1: Provide Component
+             Module: Provide Module
+     
+             state Component_1 {
+                 [*] --> Child1
+     
+                 Child1: Child Components
+             }
+     
+             state Module {
+                 [*] --> Child2
+                 [*] --> Child3
+                 Child2: Child Component
+                 Child3: Child Module
+     
+                 state Child3 {
+                     [*] --> Child4
+                     [*] --> Child5
+     
+                     Child4: Child Component
+                     Child5: Child Component
+                 }
+             }
+         }
+        `}></Mermaid>
+      </Slide>
+
       <Slide>
         <h2>
           <a

@@ -1,5 +1,6 @@
 import { Slide } from '../../../components/Slide';
 import { AboutMe } from '../../../components/AboutMe';
+import { Mermaid } from '../../../components/Mermaid';
 export const Intro = () => (
   <>
     <Slide>
@@ -26,7 +27,35 @@ export const Intro = () => (
         <li className="fragment">Angular Updates (17+)</li>
       </ul>
     </Slide>
-
-
+    <Slide>
+      <Mermaid
+        chart={`graph LR;
+        Group:iam-admins -- contains-user --> User:Josh 
+        Group:iam-admins -- contains-user --> User:Pradeep 
+        User:Josh -- has-policy --> Policy:TempPolicyDebugging 
+        Group:iam-admins -- has-policy --> Policy:IAMAllAccess 
+        Statement:IAMAllAccess-1 -- iam:DeleteUser --> User:Josh 
+        Statement:IAMAllAccess-1 -- iam:DeleteUser --> User:Josh 
+        Statement:IAMAllAccess-1 -- iam:DeleteUser --> User:Pradeep 
+        Statement:IAMAllAccess-1 -- iam:DeleteUser --> User:Pradeep 
+        Statement:IAMAllAccess-1 -- iam:ListUsers --> Service:IAM 
+      `}
+      ></Mermaid>
+    </Slide>
+    <Slide>
+      <Mermaid
+        chart={`graph LR;
+        Group:iam-admins -- contains-user --> User:Josh 
+        Group:iam-admins -- contains-user --> User:Pradeep 
+        User:Josh -- has-policy --> Policy:TempPolicyDebugging 
+        Group:iam-admins -- has-policy --> Policy:IAMAllAccess 
+        Statement:IAMAllAccess-1 -- iam:DeleteUser --> User:Josh 
+        Statement:IAMAllAccess-1 -- iam:DeleteUser --> User:Josh 
+        Statement:IAMAllAccess-1 -- iam:DeleteUser --> User:Pradeep 
+        Statement:IAMAllAccess-1 -- iam:DeleteUser --> User:Pradeep 
+        Statement:IAMAllAccess-1 -- iam:ListUsers --> Service:IAM 
+      `}
+      ></Mermaid>
+    </Slide>
   </>
 );
