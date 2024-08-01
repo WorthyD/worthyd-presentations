@@ -2,6 +2,8 @@ import { Note } from '~/components/Notes';
 import { Slide } from '../../../components/Slide';
 
 import { TSX } from '../../../components/SyntaxHighlight';
+import { UserContext } from '../../../layouts/LayoutDeck';
+import { useContext } from 'react';
 
 const baseService = `
     import { HttpClient } from '@angular/common/http';
@@ -146,45 +148,66 @@ const useFactoryExample = `
   })
   export class AppModule {}
 `;
+const useFactoryExample2 = `
+  @NgModule({
+      imports: [ConfigurationService]
+      providers: [
+        {
+          provide: SecurityService,
+          useFactory: (configurationService: ConfigurationService) => new SecurityService(
+            {
+              basePath: environment.apiUrl,
+              orgId: configurationService.getOrgId()
+            }
+          ),
+          deps: [ConfigurationService]
+        },
+      ],
+  })
+  export class AppModule {}
+`;
+const multi = `
+  {
+    provide: APP_INITIALIZER,
+    useClass: configInitializer,
+    multi: true,
+  },
+  {
+    provide: HTTP_INTERCEPTORS,
+    useClass: apiKeyInterceptor,
+    multi: true
+  }
+`;
+
+const multiCode = `
+  constructor(@Inject(DataStoreClasses) public storages: DataStoreClasses[]) {
+    console.log('DATA_STORES_CLASSES', storages.length);
+  }
+`;
 
 export const DependencyInjection = () => {
-  function getImageUrl(name) {
-    return new URL(`/src/assets/providers/${name}`, import.meta.url).href;
-  }
   return (
     <>
       <Slide>
         <h2>Dependency Injection Providers</h2>
         <ul>
           <li className="fragment">
-            <a
-              href="https://angular.dev/guide/di/dependency-injection-providers#using-an-injectiontoken-object"
-              target="_blank"
-            >
+            <a href="https://angular.dev/guide/di/dependency-injection-providers#using-an-injectiontoken-object" target="_blank">
               useValue
             </a>
           </li>
           <li className="fragment">
-            <a
-              href="https://angular.dev/guide/di/dependency-injection-providers#class-providers-useclass"
-              target="_blank"
-            >
+            <a href="https://angular.dev/guide/di/dependency-injection-providers#class-providers-useclass" target="_blank">
               useClass
             </a>
           </li>
           <li className="fragment">
-            <a
-              href="https://angular.dev/guide/di/dependency-injection-providers#alias-providers-useexisting"
-              target="_blank"
-            >
+            <a href="https://angular.dev/guide/di/dependency-injection-providers#alias-providers-useexisting" target="_blank">
               useExisting
             </a>
           </li>
           <li className="fragment">
-            <a
-              href="https://angular.dev/guide/di/dependency-injection-providers#factory-providers-usefactory"
-              target="_blank"
-            >
+            <a href="https://angular.dev/guide/di/dependency-injection-providers#factory-providers-usefactory" target="_blank">
               useFactory
             </a>
           </li>
@@ -202,7 +225,7 @@ export const DependencyInjection = () => {
         <h2>useValue</h2>
         <TSX code={tokenDeclaration} />
         <Note>
-          Must be static value
+          Token for non-class dependencies Must be static value <br /> Can't be an interface
         </Note>
       </Slide>
 
@@ -239,6 +262,10 @@ export const DependencyInjection = () => {
         <h2>useFactory</h2>
         <TSX code={useFactoryExample} />
       </Slide>
+      <Slide>
+        <h2>useFactory</h2>
+        <TSX code={useFactoryExample2} />
+      </Slide>
 
       {/* 
       <Slide>
@@ -269,13 +296,24 @@ export const DependencyInjection = () => {
         <h2>Provide In Component/Module</h2>
         <img src={getImageUrl('provide-in-module-component.drawio.png')} />
       </Slide> */}
+
       <Slide>
-      <a
-            href="https://stackblitz.com/~/github.com/WorthyD/worthyd-sandbox?file=apps/worthyd-standalone/src/app/app.config.ts"
-            target="_blank"
-          >
-            Demo
-          </a>
+        <h2>What about multi?</h2>
+        <TSX code={multi} />
+      </Slide>
+      <Slide>
+        <h2>Multi In code</h2>
+
+        <TSX code={multiCode} />
+      </Slide>
+
+      <Slide>
+        <a
+          href="https://stackblitz.com/~/github.com/WorthyD/worthyd-sandbox?file=apps/worthyd-standalone/src/app/app.config.ts"
+          target="_blank"
+        >
+          Demo
+        </a>
       </Slide>
     </>
   );

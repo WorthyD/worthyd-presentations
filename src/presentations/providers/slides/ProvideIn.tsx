@@ -92,9 +92,10 @@ export const ProvideIn = () => {
       </Slide>
       <Slide>
         <h2>What's causing this and how can we fix it?</h2>
+        <h3 className="fragment">We need to tell Angular how and where to provide it.</h3>
         <Note>
-          The service needs to be setup to be injected into so that Angular
-          knows to serve it up
+          The service needs to be setup to be injected into so that Angular knows to serve it up
+          <br />
         </Note>
       </Slide>
       <Slide>
@@ -124,13 +125,10 @@ export const ProvideIn = () => {
           </div>
         </div>
       </Slide>
-      {/* <Slide>
-        <h2>Provide In Root</h2>
-        <img src={getImageUrl('provide-in-root.drawio.png')} />
-      </Slide> */}
       <Slide>
         <h2>Provide In Root</h2>
-        <Mermaid chart={`
+        <Mermaid
+          chart={`
          stateDiagram-v2
          Application -->  Root_Scope
           Root_Scope: Root Scope
@@ -146,9 +144,10 @@ export const ProvideIn = () => {
          }
  
      
-        `}></Mermaid>
+        `}
+        ></Mermaid>
       </Slide>
- 
+
       <Slide>
         <h2>Provide In Component</h2>
         <TSX code={provideInComponent} />
@@ -162,13 +161,14 @@ export const ProvideIn = () => {
         <h2>Provide In Module</h2>
         <TSX code={provideInModule} />
       </Slide>
-      <Slide>
+      {/* <Slide>
         <h2>Provide In Component/Module</h2>
         <img src={getImageUrl('provide-in-module-component.drawio.png')} />
-      </Slide>
+      </Slide> */}
       <Slide>
-        <h2>Provide In Root</h2>
-        <Mermaid chart={`
+        <h2>Provide In Component/Module</h2>
+        <Mermaid
+          chart={`
          stateDiagram-v2
          state Application {
              Component_1: Provide Component
@@ -195,13 +195,14 @@ export const ProvideIn = () => {
                  }
              }
          }
-        `}></Mermaid>
+        `}
+        ></Mermaid>
       </Slide>
 
       <Slide>
         <h2>
           <a
-            href="https://stackblitz.com/~/github.com/WorthyD/worthyd-sandbox?file=apps/worthyd-module/src/app/app.module.ts"
+            href="https://github.com/WorthyD/worthyd-sandbox/tree/main/apps/worthyd-module"
             target="_blank"
           >
             Demo

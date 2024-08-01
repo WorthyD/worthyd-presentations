@@ -157,9 +157,13 @@ export const Bootstrapping = () => {
         <h2>HttpClientModule w/ Interceptors</h2>
         <TSX code={httpClientModule} />
       </Slide>
-      <Slide>
+      {/* <Slide>
         <h2>HttpClientModule w/ Interceptors</h2>
         <TSX code={httpClientStandalone} />
+      </Slide> */}
+      <Slide>
+        <h2>HttpClientModule w/ Interceptors</h2>
+        <TSX code={httpInterceptors} />
       </Slide>
 
       <Slide>
@@ -167,9 +171,9 @@ export const Bootstrapping = () => {
         <TSX code={libProvide} />
       </Slide>
 
-      <Slide>
+      {/* <Slide>
         <h2>Demo</h2>
-      </Slide>
+      </Slide> */}
     </>
   );
 };

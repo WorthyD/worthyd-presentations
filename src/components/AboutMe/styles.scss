@@ -1,7 +1,11 @@
 .about-me {
+  display: flex;
   img {
-    max-width: 400px;
+    max-width: 261px;
+    max-height: 239px;
+
     display: block;
-    float: left;
+  }
+  &__info {
   }
 }

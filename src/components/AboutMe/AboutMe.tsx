@@ -9,14 +9,17 @@ export const AboutMe = () => {
     <Slide>
       <div className="about-me">
         <img src={getImageUrl()} />
-        <h2>Daniel Worthy</h2>
-        <h3>I like to build stuff</h3>
-        <ul>
-            <li>Own 422 LEGO Sets and 75K bricks</li>
-            <li>Oldest owned set is #580 from 1975</li>
-        </ul>
-
-
+        <div className="about-me__info">
+          <h2>Daniel Worthy</h2>
+          <h3>Software Engineer</h3>
+          <ul>
+            <li className="fragment">Been with JBH since Fall 2023</li>
+            <li className="fragment">Been building web apps 'professionally' since 2007</li>
+            <li className="fragment">I like to build stuff</li>
+            <li className="fragment">Own 422 LEGO Sets and 75K bricks</li>
+            <li className="fragment">Oldest owned set is #580  Brick Yard from 1975</li>
+          </ul>
+        </div>
       </div>
     </Slide>
   );
