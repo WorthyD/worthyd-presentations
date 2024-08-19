@@ -76,6 +76,16 @@ const provideInComponent = `
 
 `;
 
+const provideInRoute = `
+const routes: Routes = [
+  {
+    path: 'user',
+    component: UserComponent,
+    providers: [UserService]
+  },
+];
+`;
+
 export const ProvideIn = () => {
   function getImageUrl(name) {
     return new URL(`/src/assets/providers/${name}`, import.meta.url).href;
@@ -161,10 +171,6 @@ export const ProvideIn = () => {
         <h2>Provide In Module</h2>
         <TSX code={provideInModule} />
       </Slide>
-      {/* <Slide>
-        <h2>Provide In Component/Module</h2>
-        <img src={getImageUrl('provide-in-module-component.drawio.png')} />
-      </Slide> */}
       <Slide>
         <h2>Provide In Component/Module</h2>
         <Mermaid
@@ -198,13 +204,76 @@ export const ProvideIn = () => {
         `}
         ></Mermaid>
       </Slide>
-
+      <Slide>
+        <h2>Provide in Route</h2>
+        <TSX code={provideInRoute} />
+      </Slide>
+      <Slide>
+        <Mermaid
+          chart={`
+         flowchart BT
+ 
+   subgraph Environment Injectors
+    direction BT
+    D[Router Injector]
+    D --> E[Root Injector] 
+    E ---> F[Platform Injectors]
+    end
+    subgraph Element Providers 
+    direction BT
+    A[Grandchild component]
+    A --> B[Parent Component] 
+    B ---> C[App Root]
+    C -.-> A
+    end
+    A --> D
+     
+        `}
+        ></Mermaid>
+      </Slide>
+      <Slide>
+        <h2>Bonus Reading: Resolution Modifiers</h2>
+        <ul>
+          <li>
+            <a href="https://angular.dev/guide/di/hierarchical-dependency-injection#optional" target="_blank">
+              @Optional()
+            </a>
+          </li>
+          <li>
+            <a href="https://angular.dev/guide/di/hierarchical-dependency-injection#self" target="_blank">
+              @Self()
+            </a>
+          </li>
+          <li>
+            <a href="https://angular.dev/guide/di/hierarchical-dependency-injection#skipself" target="_blank">
+              @SkipSelf()
+            </a>
+          </li>
+          <li>
+            <a href="https://angular.dev/guide/di/hierarchical-dependency-injection#host" target="_blank">
+              @Host()
+            </a>
+          </li>
+        </ul>
+      </Slide>
+      <Slide>
+        <h2>Bonus Reading Examples</h2>
+        <TSX
+          code={`
+  @Component({
+    selector: 'app-self-no-data',
+    templateUrl: './self-no-data.component.html',
+    styleUrls: ['./self-no-data.component.css']
+  })
+  export class SelfNoDataComponent {
+    constructor(@Self() @Optional() public leaf?: LeafService) { }
+  }   
+          `}
+        />
+      </Slide>
       <Slide>
         <h2>
-          <a
-            href="https://github.com/WorthyD/worthyd-sandbox/tree/main/apps/worthyd-module"
-            target="_blank"
-          >
+          <a href="https://github.com/WorthyD/worthyd-sandbox/tree/main/apps/worthyd-module" target="_blank">
             Demo
           </a>
         </h2>

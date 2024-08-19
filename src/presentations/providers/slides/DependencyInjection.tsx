@@ -123,7 +123,7 @@ const useFactory = `
   import { Observable, delay } from 'rxjs';
   import { User } from '../models/my-test-data-model';
 
-  @Injectable()
+  // @Injectable() <-- must remove for this example
   export class MyTestDataService {
       constructor(private httpClient: HttpClient, private baseUrl:string) {}
 
@@ -142,7 +142,7 @@ const useFactoryExample = `
               provide: MyTestDataService,
               useFactory: 
                 (HttpClient, baseUrl) => new  MyTestDataService(HttpClient, baseUrl),
-              deps:[HttpClient, 'https://jsonplaceholder.typicode.com/']
+              deps:[HttpClient, environment.baseUrl]
           }
       ],
   })
@@ -306,12 +306,9 @@ export const DependencyInjection = () => {
 
         <TSX code={multiCode} />
       </Slide>
-
+      
       <Slide>
-        <a
-          href="https://stackblitz.com/~/github.com/WorthyD/worthyd-sandbox?file=apps/worthyd-standalone/src/app/app.config.ts"
-          target="_blank"
-        >
+        <a href="https://github.com/WorthyD/worthyd-sandbox/tree/main/apps/worthyd-standalone/src/app" target="_blank">
           Demo
         </a>
       </Slide>
