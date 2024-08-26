@@ -114,7 +114,8 @@ export const ProvideIn = () => {
           <li className="fragment">Provide in Root</li>
           <li className="fragment">Provide in Component</li>
           <li className="fragment">Provide in Module</li>
-          <li className="fragment">Provide in Application Config</li>
+          <li className="fragment">Provide in Application Config (Standalone)</li>
+          <li className="fragment">Provide in Route</li>
         </ul>
       </Slide>
       <Slide>
@@ -129,7 +130,7 @@ export const ProvideIn = () => {
               <li className="fragment">Introduced in Angular 6</li>
               <li className="fragment">Out of the box w/ CLI</li>
               <li className="fragment">Tree Shakeable</li>
-              <li className="fragment">Provided everywhere it is imported</li>
+              <li className="fragment">Can be referenced everywhere it is imported</li>
               <li className="fragment">Globally scoped</li>
             </ul>
           </div>
