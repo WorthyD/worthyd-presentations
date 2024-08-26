@@ -1,5 +1,6 @@
 import { Slide } from '../../../components/Slide';
 import { AboutMe } from '../../../components/AboutMe';
+import { Note } from '~/components/Notes';
 export const Intro = () => {
   return (
     <>
@@ -27,6 +28,15 @@ export const Intro = () => {
           <li className="fragment">Standalone Components/Apps</li>
           <li className="fragment">Angular Updates (17+)</li>
         </ul>
+        <Note>
+          DI provides us the ability to make our code portable and abstract complex functionality.
+          <br />
+          Lots of value in going back and looking at basic functionality.
+          <br />
+          Things a little bit different in standalone world
+          <br />
+          Some APIs are changing in newer versions of angular
+        </Note>
       </Slide>
     </>
   );

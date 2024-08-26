@@ -77,13 +77,13 @@ const provideInComponent = `
 `;
 
 const provideInRoute = `
-const routes: Routes = [
-  {
-    path: 'user',
-    component: UserComponent,
-    providers: [UserService]
-  },
-];
+  const routes: Routes = [
+    {
+      path: 'user',
+      component: UserComponent,
+      providers: [UserService]
+    },
+  ];
 `;
 
 export const ProvideIn = () => {
@@ -99,6 +99,7 @@ export const ProvideIn = () => {
       <Slide>
         <h2>The Error</h2>
         <img src={getImageUrl('no-provider.png')} />
+        <Note>Saw this a lot in early angular</Note>
       </Slide>
       <Slide>
         <h2>What's causing this and how can we fix it?</h2>
@@ -106,6 +107,7 @@ export const ProvideIn = () => {
         <Note>
           The service needs to be setup to be injected into so that Angular knows to serve it up
           <br />
+          Angular needs to know what scope this belongs to.
         </Note>
       </Slide>
       <Slide>
@@ -207,7 +209,18 @@ export const ProvideIn = () => {
       </Slide>
       <Slide>
         <h2>Provide in Route</h2>
-        <TSX code={provideInRoute} />
+        <div className="two-col small-text">
+          <div>
+            <TSX code={provideInRoute} />
+          </div>
+          <div>
+            <ul>
+              <li className="fragment">Introduced in Angular 14</li>
+              <li className="fragment">Serves as a group module replacement</li>
+              <li className="fragment">Learned about during the Speed Run</li>
+            </ul>
+          </div>
+        </div>
       </Slide>
       <Slide>
         <Mermaid

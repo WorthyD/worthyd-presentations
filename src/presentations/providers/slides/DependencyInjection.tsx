@@ -212,20 +212,25 @@ export const DependencyInjection = () => {
             </a>
           </li>
         </ul>
+        <Note>Ways to modify default provider behavior or provide code outside of angular's syntax</Note>
       </Slide>
 
       <Slide>
         <h2>Simple Service</h2>
         <TSX code={baseService} />
+        <Note>Refactor to change the base URL</Note>
       </Slide>
       <Slide>
         <TSX code={baseDesiredService} />
+        <Note>This is the desired result, but not possible</Note>
       </Slide>
       <Slide>
         <h2>useValue</h2>
         <TSX code={tokenDeclaration} />
         <Note>
           Token for non-class dependencies Must be static value <br /> Can't be an interface
+          <br />
+          Kind of like a key value pair,
         </Note>
       </Slide>
 
@@ -235,6 +240,7 @@ export const DependencyInjection = () => {
 
       <Slide>
         <TSX code={useValueExample} />
+        <Note>See this a lot in unit tests, replacing a class with an object with essential functions</Note>
       </Slide>
 
       <Slide>
@@ -255,8 +261,9 @@ export const DependencyInjection = () => {
         </Note>
       </Slide>
       <Slide>
-        <h2>useFactory</h2>
+        <h2>Back to old code</h2>
         <TSX code={useFactory} />
+        <Note>Treat like a vanilla JS class</Note>
       </Slide>
       <Slide>
         <h2>useFactory</h2>
@@ -265,6 +272,7 @@ export const DependencyInjection = () => {
       <Slide>
         <h2>useFactory</h2>
         <TSX code={useFactoryExample2} />
+        <Note>Dependant on the result of other apis</Note>
       </Slide>
 
       {/* 
@@ -300,13 +308,16 @@ export const DependencyInjection = () => {
       <Slide>
         <h2>What about multi?</h2>
         <TSX code={multi} />
+        <Note>
+          Occasionally see this <br></br>
+          We see for interceptors and initializers. Can also be used for validators
+        </Note>
       </Slide>
       <Slide>
         <h2>Multi In code</h2>
-
         <TSX code={multiCode} />
       </Slide>
-      
+
       <Slide>
         <a href="https://github.com/WorthyD/worthyd-sandbox/tree/main/apps/worthyd-standalone/src/app" target="_blank">
           Demo
