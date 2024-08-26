@@ -17,19 +17,39 @@ export const Outro = () => {
         <Note>
           stages of life: Body builder, actor, public servant, author <br />
           talks about learning a role and how to best work with others <br />
-          Do not attach your value of a human being by how useful you are</Note>
+          Do not attach your value of a human being by how useful you are
+        </Note>
       </Slide>
       <Slide>
-        <h2>Contact</h2>
-        <h3>[Teams Link Here]</h3>
-        <h2>Links</h2>
-        <h3><a href="https://revealjs.com/" target="_blank">Reveal.js</a></h3>
-        <h3><a href="https://angular.dev/guide/di/dependency-injection" target="_blank">Understanding dependency injection</a></h3>
+        <h3>Contact</h3>
+        {/* <a href="sip:daniel.j.worthy@jbhunt.com">[Teams Link Here]</a> */}
+        <img src="https://gravatar.com/avatar/0a4529b934a763d95f57b3c56284d6ef?size=125" style={{ borderRadius: '50%' }} />
 
+        <h4>
+          <a href="https://teams.microsoft.com/l/chat/0/0?users=daniel.j.worthy@jbhunt.com" target="_blank">
+            Find me on Teams
+          </a>
+        </h4>
+
+        <h3>Links</h3>
+        <h4>
+          Presentation Framework -
+          <a href="https://revealjs.com/" target="_blank">
+            Reveal.js
+          </a>
+        </h4>
+        <h4>
+          <a href="https://github.com/WorthyD/worthyd-presentations/" target="_blank">
+            Presentation Source
+          </a>
+        </h4>
+        <h4>
+          <a href="https://angular.dev/guide/di/dependency-injection" target="_blank">
+            Understanding dependency injection
+          </a>
+        </h4>
       </Slide>
-      <Slide>
-        Thank you.
-      </Slide>
+      <Slide>Thank you.</Slide>
     </>
   );
 };

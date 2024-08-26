@@ -103,7 +103,8 @@ export const ProvideIn = () => {
       </Slide>
       <Slide>
         <h2>What's causing this and how can we fix it?</h2>
-        <h3 className="fragment">We need to tell Angular how and where to provide it.</h3>
+        <h3>The compiler knows where the code lives.</h3>
+        <h3 className="fragment">Angular needs to know how to serve up the service.</h3>
         <Note>
           The service needs to be setup to be injected into so that Angular knows to serve it up
           <br />
