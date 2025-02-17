@@ -13,16 +13,6 @@ export const TechCareerBookList: BookGroupInfo[] = [
         audible: `https://www.amazon.com/Staff-Engineers-Path-Individual-Contributors/dp/B0C7SFBXW3`,
         publishYear: `2022`,
       },
-    ],
-    notes: `
-- Take a broad, strategic view when thinking about your work
-- Dive into practical tactics for making projects succeed
-- Determine what "good engineering" means in your organization
-`,
-  },
-  {
-    title: '',
-    books: [
       {
         title: 'Staff Engineer',
         desc: `Leadership beyond the management track`,
@@ -34,9 +24,16 @@ export const TechCareerBookList: BookGroupInfo[] = [
       },
     ],
     notes: `
+    path:
+- Take a broad, strategic view when thinking about your work
+- Dive into practical tactics for making projects succeed
+- Determine what "good engineering" means in your organization
+
+engineer:
 Contains good advice on determining if you want to pursue staff or management.
     Interviews with Staff Engineers form Dropbox, Etsy, Slack, etc.
-    `,
+ 
+`,
   },
 
   {
@@ -51,7 +48,12 @@ Contains good advice on determining if you want to pursue staff or management.
         audible: `https://www.amazon.com/Modern-Software-Engineering-Better-Faster/dp/B0BLXCXT3R`,
         publishYear: `2021`,
       },
+      //TODO: The effective engineer
     ],
-    notes: 'Struggled on where to put this. References a lot of other books on this lis',
+    notes: `Struggled on where to put this. References a lot of other books on this liss
+    Farley is a co-author of Continuous Delivery
+    has a decent youtube channel
+    
+    `,
   },
 ];

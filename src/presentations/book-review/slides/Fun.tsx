@@ -8,10 +8,11 @@ export const Fun = () => {
   }
   return (
     <>
-      <Slide>
+      {/* <Slide> */}
         <Slide>
           <h3>The 'Fun' Books</h3>
-          <h4 className="fragment">Ok... it's a bunch of video game books</h4>
+          <h4 className="fragment">These are programming adjacent or comradery heavy books. </h4>
+          <h4 className="fragment">Programming adjacent books essentially mean video game books </h4>
         </Slide>
         <Slide>
           <Book
@@ -62,6 +63,7 @@ export const Fun = () => {
           <Note>
             <p>BSP - Destiny, Witcher 3, Shovel Knight and Startdew Value</p>
             <p>RP - Volatility of industry</p>
+            <p>Play Nice: The Rise, Fall, and Future Of Blizzard Entertainment</p>
           </Note>
         </Slide>
         <Slide>
@@ -112,7 +114,7 @@ export const Fun = () => {
           ></Book>
           <Note>
             <pre>
-              Creation of Comander Keen - Wolf - Doom - Quake <br /> Attempt to
+              Creation of Comander Keen - Wolfensteain - Doom - Quake <br /> Attempt to
               get permission to write SMB 3 on PC - 72 binge. Wolf 3d Doom
               <br />
               Quake - took care of tehir own sofware idstro and people hacked
@@ -120,7 +122,7 @@ export const Fun = () => {
             </pre>
           </Note>
         </Slide>
-      </Slide>
+      {/* </Slide> */}
       <Slide>
         <h3>Band of Brothers / Pacific</h3>
         <ul>

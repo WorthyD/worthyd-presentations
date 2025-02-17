@@ -33,24 +33,23 @@ var theyDigits, theStash, nextFigure, anEmptyHash = {}
 
 export const DevBooks = () => (
   <>
-    <BookGroup
-      bookSlides={DevBookList}
-      title="Developer Books"
-      subTitle="Valuable, but potentially boring"
-    />
+    <BookGroup bookSlides={DevBookList} title="Developer Books" subTitle="Valuable, but potentially boring" />
+    {/* <Slide> */}
     <Slide>
-      <Slide>
-        <Book
-          book={{
-            title: 'If Hemingway Wrote JavaScript',
-            thumb: 'h.jpg',
-          }}
-        ></Book>
-      </Slide>
-      <Slide>
-        <h2>If Tupac Wrote JS</h2>
-        <JSX code={code} />
-      </Slide>
+      <h2>Humor Break</h2>
+      <Book
+        book={{
+          title: 'If Hemingway Wrote JavaScript',
+          thumb: 'h.jpg',
+          amazon: 'https://www.amazon.com/Hemingway-Wrote-JavaScript-Angus-Croll/dp/1593275854',
+          author: ' Angus Croll'
+        }}
+      ></Book>
     </Slide>
+    <Slide>
+      <h2>If Tupac Wrote JS</h2>
+      <JSX code={code} />
+    </Slide>
+    {/* </Slide> */}
   </>
 );

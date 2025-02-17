@@ -11,10 +11,10 @@ export const LifeBookList: BookGroupInfo[] = [
         author: `Dale Carnegie`,
         amazon: `https://www.amazon.com/How-Win-Friends-Influence-People/dp/8183227899`,
         audible: `https://www.amazon.com/How-Win-Friends-Influence-People/dp/B0006IU7JK`,
-        publishYear: `1936`,
-      },
+        publishYear: `1936`
+      }
     ],
-    notes: '',
+    notes: `Probably the best self teaching social interaction book in existence. `
   },
   {
     title: 'Cal Newport',
@@ -26,7 +26,7 @@ export const LifeBookList: BookGroupInfo[] = [
         author: `Cal Newport`,
         amazon: `https://www.amazon.com/NEW-Deep-Work-Focused-Success-Distracted/dp/B09VQ2WZ4Y`,
         audible: `https://www.amazon.com/Deep-Work-Cal-Newport-audiobook/dp/B0189PVAWY`,
-        publishYear: `2013`,
+        publishYear: `2013`
       },
       {
         title: `Digital Minimalism`,
@@ -35,8 +35,17 @@ export const LifeBookList: BookGroupInfo[] = [
         author: `Cal Newport`,
         amazon: `https://www.amazon.com/Digital-Minimalism-Choosing-Focused-Noisy/dp/0525536515`,
         audible: `https://www.amazon.com/Digital-Minimalism-Cal-Newport-audiobook/dp/B07LGDY5PC`,
-        publishYear: `2019`,
+        publishYear: `2019`
       },
+      {
+        title: `Slow Productivity`,
+        desc: `The Lost Art of Accomplishment Without Burnout`,
+        thumb: `sp.jpg`,
+        author: `Cal Newport`,
+        amazon: `https://www.amazon.com/Slow-Productivity-Accomplishment-Without-Burnout/dp/024165291X`,
+        audible: `https://www.amazon.com/Slow-Productivity-Accomplishment-Without-Burnout/dp/B0CB96H3M4`,
+        publishYear: `2024`
+      }
     ],
     notes: `
     
@@ -51,7 +60,7 @@ Focus on social media is evil
 FOMO bad
  
       
-      `,
+      `
   },
   {
     title: 'Building Habits',
@@ -63,7 +72,7 @@ FOMO bad
         author: `Steven Covey`,
         amazon: `https://www.amazon.com/Habits-Highly-Effective-People-Powerful/dp/1982137274`,
         audible: `https://www.amazon.com/Habits-Highly-Effective-People-Anniversary/dp/B086DD5KSJ/`,
-        publishYear: `1990`,
+        publishYear: `1990`
       },
       {
         title: `Atomic Habits`,
@@ -72,7 +81,7 @@ FOMO bad
         author: `James Clear`,
         amazon: `https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299/`,
         audible: `https://www.amazon.com/Atomic-Habits-James-Clear-audiobook/dp/B07RFSSYBH`,
-        publishYear: `2018`,
+        publishYear: `2018`
       },
       {
         title: `Smarter Better Faster`,
@@ -81,12 +90,18 @@ FOMO bad
         author: `Charles Duhigg`,
         amazon: `https://www.amazon.com/Smarter-Faster-Better-Transformative-Productivity/dp/0812983599`,
         audible: `https://www.amazon.com/Smarter-Faster-Better-audiobook/dp/B017WRCV0A/`,
-        publishYear: `2016`,
-      },
+        publishYear: `2016`
+      }
     ],
-    notes: `Atomic Habits is the definitive guide to breaking bad behaviors and adopting good ones in four steps, 
-    showing you how small, incremental, everyday routines compound into massive, positive change over time.
-    `,
+    notes: `
+7 habits establishes a lot of baseline habits. Personal development
+time management, self management, interpersonal skills, 
+and the ability to lead and manage change.
+  
+Atomic Habits is the definitive guide to breaking bad behaviors 
+and adopting good ones in four steps, showing you how small, 
+incremental, everyday routines compound into massive, positive change over time.
+    `
   },
   {
     title: '',
@@ -98,13 +113,14 @@ FOMO bad
         author: `Susan Cain`,
         amazon: `https://www.amazon.com/Quiet-Power-Introverts-World-Talking/dp/0307352153`,
         audible: `https://www.amazon.com/Quiet-Susan-Cain-audiobook/dp/B00714PZMQ`,
-        publishYear: `2013`,
-      },
+        publishYear: `2013`
+      }
     ],
     notes: `
-    Highlights a lot of famous introverts
-    goes through a lot of traits of introverts and how they can be leveraged.
-    `,
+Highlights a lot of famous introverts
+goes through a lot of traits of introverts 
+and how they can be leveraged.
+    `
   },
 
   {
@@ -117,33 +133,30 @@ FOMO bad
         author: `Chris Voss`,
         amazon: `https://www.amazon.com/Never-Split-Difference-Negotiating-Depended/dp/1847941486`,
         audible: `https://www.amazon.com/Never-Split-Difference-audiobook/dp/B01COR1GM2`,
-        publishYear: `2016`,
-      },
+        publishYear: `2016`
+      }
     ],
     notes: `
 Former FBI negotiator    
 
-    `,
+    `
   },
   {
-    title: '',
+    title: 'Financial Literacy Books',
     books: [
-      {
-        title: `Rich Dad Poor Dad`,
-        desc: `What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not`,
-        thumb: `rdpd.jpg`,
-        author: `Robert T. Kiyosaki`,
-        amazon: ``,
-        audible: ``,
-        publishYear: `1998`,
-      },
+      // {
+      //   title: `Rich Dad Poor Dad`,
+      //   desc: `What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not`,
+      //   thumb: `rdpd.jpg`,
+      //   author: `Robert T. Kiyosaki`,
+      //   amazon: ``,
+      //   audible: ``,
+      //   publishYear: `1998`
+      // }
     ],
     notes: `
-   Financial literacy 
-    dirt cheap. $4 on amazon
-    Claims to be 1.2 billion in debt
-    
-    `,
+   
+    `
   },
   {
     title: '',
@@ -155,10 +168,14 @@ Former FBI negotiator
         author: `Henry Cloud`,
         amazon: `https://www.amazon.com/Boundaries-Updated-Expanded-When-Control/dp/0310351804`,
         audible: `https://www.amazon.com/Boundaries-When-Take-Control-Your/dp/B072C64V1L`,
-        publishYear: `1992`,
-      },
+        publishYear: `1992`
+      }
     ],
-    notes: '',
+    notes: `
+Helps separate personal and professional life
+Christian bible verses.
+
+`
   },
   {
     title: '',
@@ -170,12 +187,12 @@ Former FBI negotiator
         author: `Ryan Holiday`,
         amazon: `https://www.amazon.com/Obstacle-Way-Ancient-Adversity-Advantage/dp/1781251495`,
         audible: `https://www.amazon.com/Obstacle-Way-Timeless-Turning-Triumph/dp/B0BT53FNVH`,
-        publishYear: `2014`,
-      },
+        publishYear: `2014`
+      }
     ],
     notes: `What stands in the way is the way
     perception, action and will
-    `,
+    `
   },
   {
     title: 'Marie Kondo',
@@ -187,7 +204,7 @@ Former FBI negotiator
         author: `Marie Kondo`,
         amazon: `https://www.amazon.com/Life-Changing-Magic-Tidying-Decluttering-Organizing/dp/1607747308`,
         audible: `https://www.amazon.com/Life-Changing-Magic-Tidying-Decluttering-Organizing/dp/B00RC3ZGN4`,
-        publishYear: `2014`,
+        publishYear: `2014`
       },
       {
         title: `Spark Joy`,
@@ -196,43 +213,43 @@ Former FBI negotiator
         author: `Marie Kondo`,
         amazon: `https://www.amazon.com/Spark-Joy-Illustrated-Organizing-Changing/dp/1607749726`,
         audible: `https://www.amazon.com/Spark-Joy-Marie-Kondo-audiobook/dp/B017WSRCGC`,
-        publishYear: `2016`,
-      },
+        publishYear: `2016`
+      }
     ],
-    notes: '',
+    notes: ''
   },
-  {
-    title: '',
-    books: [
-      {
-        title: `Good To Great`,
-        desc: `Why Some Companies Make the Leap and Others Don't`,
-        thumb: `gg.jpg`,
-        author: `Jim Collins`,
-        amazon: `https://www.amazon.com/Good-Great-Some-Companies-Others/dp/0066620996`,
-        audible: `https://www.amazon.com/Good-to-Great-Jim-Collins-audiobook/dp/B003VXI5MS`,
-        publishYear: `2001`,
-      },
-    ],
-    notes: `Result of 5 years studying 28 companies, why some failed, and some succeeded.
+  // {
+  //   title: '',
+  //   books: [
+  //     {
+  //       title: `Good To Great`,
+  //       desc: `Why Some Companies Make the Leap and Others Don't`,
+  //       thumb: `gg.jpg`,
+  //       author: `Jim Collins`,
+  //       amazon: `https://www.amazon.com/Good-Great-Some-Companies-Others/dp/0066620996`,
+  //       audible: `https://www.amazon.com/Good-to-Great-Jim-Collins-audiobook/dp/B003VXI5MS`,
+  //       publishYear: `2001`
+  //     }
+  //   ],
+  //   notes: `Result of 5 years studying 28 companies, why some failed, and some succeeded.
     
-    Startup side of things`,
-  },
-  {
-    title: '',
-    books: [
-      {
-        title: `Did that Just Happen?!`,
-        desc: `Beyond "Diversity"-Creating Sustainable and Inclusive Organizations`,
-        thumb: `dtjh.jpg`,
-        author: ` Dr. Stephanie Pinder-Amaker , Dr. Lauren Wadsworth`,
-        amazon: `https://www.amazon.com/Did-That-Just-Happen-Organizations/dp/0807035882`,
-        audible: `https://www.amazon.com/Did-That-Just-Happen-Organizations/dp/B08L9Q636H`,
-        publishYear: `2021`,
-      },
-    ],
-    notes: '',
-  },
+  //   Startup side of things`
+  // },
+  // {
+  //   title: '',
+  //   books: [
+  //     {
+  //       title: `Did that Just Happen?!`,
+  //       desc: `Beyond "Diversity"-Creating Sustainable and Inclusive Organizations`,
+  //       thumb: `dtjh.jpg`,
+  //       author: ` Dr. Stephanie Pinder-Amaker , Dr. Lauren Wadsworth`,
+  //       amazon: `https://www.amazon.com/Did-That-Just-Happen-Organizations/dp/0807035882`,
+  //       audible: `https://www.amazon.com/Did-That-Just-Happen-Organizations/dp/B08L9Q636H`,
+  //       publishYear: `2021`
+  //     }
+  //   ],
+  //   notes: ''
+  // },
   {
     title: '',
     books: [
@@ -243,27 +260,32 @@ Former FBI negotiator
         author: `Ximena Vengoechea`,
         amazon: `https://www.amazon.com/Listen-Like-You-Mean-Reclaiming/dp/0593087054`,
         audible: `https://www.amazon.com/Listen-Like-You-Mean-Reclaiming/dp/B08D6ZP4F1`,
-        publishYear: `2021`,
-      },
+        publishYear: `2021`
+      }
     ],
-    notes: '',
+    notes: `
+• Quickly build rapport with strangers
+• Ask the right questions to deepen a conversation
+• Pause at the right time to encourage vulnerability
+• Navigate a conversation that's gone off the rails
+`
   },
-  {
-    title: '',
-    books: [
-      {
-        title: `How Minds Change`,
-        desc: `The Surprising Science of Belief, Opinion, and Persuasion`,
-        thumb: `hmc.jpg`,
-        author: `David McRaney`,
-        amazon: `https://www.amazon.com/How-Minds-Change-Surprising-Persuasion/dp/0593190297  `,
-        audible: `https://www.amazon.com/How-Minds-Change-Surprising-Persuasion/dp/B094RJGCRH`,
-        publishYear: `2022`,
-      },
-    ],
-    notes: `1400s it was believed the barnacle goose came from the goose barnacle
-     They didn't know or understand geese migration `,
-  },
+  // {
+  //   title: '',
+  //   books: [
+  //     {
+  //       title: `How Minds Change`,
+  //       desc: `The Surprising Science of Belief, Opinion, and Persuasion`,
+  //       thumb: `hmc.jpg`,
+  //       author: `David McRaney`,
+  //       amazon: `https://www.amazon.com/How-Minds-Change-Surprising-Persuasion/dp/0593190297  `,
+  //       audible: `https://www.amazon.com/How-Minds-Change-Surprising-Persuasion/dp/B094RJGCRH`,
+  //       publishYear: `2022`
+  //     }
+  //   ],
+  //   notes: `1400s it was believed the barnacle goose came from the goose barnacle
+  //    They didn't know or understand geese migration `
+  // },
   {
     title: '',
     books: [
@@ -274,10 +296,14 @@ Former FBI negotiator
         author: `Caroline Criado Perez`,
         amazon: `https://www.amazon.com/Invisible-Women-Data-World-Designed/dp/1419735217`,
         audible: `https://www.amazon.com/Invisible-Women-audiobook/dp/B07RCZ69GP/`,
-        publishYear: `2021`,
-      },
+        publishYear: `2021`
+      }
     ],
-    notes: '',
+    notes: `
+Very informative and provides new perspectives on how data is collected and used in the world.
+1966 -> First crash test dummy, 5th percentile of female, 2002 -> first pregnant midsized crash test dummy
+2022 -> First female crash test dummy to represent the average female.
+    `
   },
   {
     title: '',
@@ -289,9 +315,28 @@ Former FBI negotiator
         author: `Tony Fadell`,
         amazon: `https://www.amazon.com/Build-Unorthodox-Guide-Making-Things/dp/0063046067`,
         audible: `https://www.amazon.com/Build-Unorthodox-Guide-Making-Things/dp/B09CF2YB6Z`,
-        publishYear: `2022`,
+        publishYear: `2022`
       },
+      {
+        title: `Ask Your Developer`,
+        desc: `How to Harness the Power of Software Developers and Win in the 21st Century`,
+        thumb: `ayd.jpg`,
+        author: `Jeff Lawson`,
+        amazon: `https://www.amazon.com/Ask-Your-Developer-Software-Developers/dp/0063018292/`,
+        audible: `https://www.amazon.com/Ask-Your-Developer-Software-Developers/dp/B083XL677V`,
+        publishYear: `2021`
+      }
+ 
     ],
-    notes: `stories and advice -> Ipod, the iphone, nest`,
-  },
+    notes: `
+Build ->
+stories and advice -> Ipod, the iphone, nest
+
+
+Ask your developer ->
+Twilio story
+`
+
+
+  }
 ];

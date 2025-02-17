@@ -2,45 +2,44 @@ import { BookGroupInfo } from '../components/BookGroup';
 
 export const DevBookList: BookGroupInfo[] = [
   {
-    title: '',
+    title: 'The Foundational 1 Page Book',
     books: [
       {
-        title: 'Agile Manifesto',
+        title: 'The Agile Manifesto',
         desc: '',
         thumb: 'am.png',
         author: '17 people',
         amazon: 'https://agilemanifesto.org/',
         audible: '',
-        publishYear: '2001',
-      },
+        publishYear: '2001'
+      }
     ],
-    notes: `Look for these author's books`,
+    notes: `Look for these author's books
+    covers the 12 principles of agile software 
+    `
   },
   {
-    title: '',
+    title: 'One Big Book To Rule Them All',
     books: [
       {
         title: 'Code Complete Vol 2',
         desc: '',
         thumb: 'cc2.jpg',
         author: 'Steve McConnell',
-        amazon:
-          'https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670',
+        amazon: 'https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670',
         audible: '',
-        publishYear: '2004',
-      },
+        publishYear: '2004'
+      }
     ],
     notes: `
-Part 1 - Laying the foundation
-Part 2 - Creating High-Quality Code
-Part 3 - Variables
-Part 4 - Statements
-Part 5 - Code Improvements
-Part 6 - System Considerations
-Part 7 - Software Craftsmanship
+Really good book on the basics of coding. 
 
-914 pages of hard core coding awesomeness.
-    `,
+It offers a lot of practical advice on how to write good code.
+
+It is a little heavier on the water fall side of planning, but still a good read.
+
+914 pages
+    `
   },
   {
     title: "The 'Text Books'",
@@ -50,21 +49,19 @@ Part 7 - Software Craftsmanship
         desc: '',
         thumb: 'mm.jpg',
         author: 'Frederick Brooks',
-        amazon:
-          'https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959/',
+        amazon: 'https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959/',
         audible: '',
-        publishYear: '1975',
+        publishYear: '1975'
       },
       {
         title: 'Refactoring',
         desc: 'Improving the Design of Existing Code',
         thumb: 'r.jpg',
         author: 'Martin Fowler*, Kent Beck*',
-        amazon:
-          'https://www.amazon.com/Refactoring-Improving-Existing-Addison-Wesley-Signature-dp-0134757599/dp/0134757599',
+        amazon: 'https://www.amazon.com/Refactoring-Improving-Existing-Addison-Wesley-Signature-dp-0134757599/dp/0134757599',
         audible: '',
-        publishYear: '1999 / 2018',
-      },
+        publishYear: '1999 / 2018'
+      }
     ],
     notes: `
 Mythical Man Month:
@@ -83,9 +80,10 @@ The true test of good code is how easy it is to change it
 With refactoring, we can take a bad, even chaotic, 
 design and rework it into well-structured code
 
-The key to effective refactoring is recognizing that you go faster when you take tiny steps
+The key to effective refactoring is recognizing 
+that you go faster when you take tiny steps
 
-    `,
+    `
   },
   {
     title: '',
@@ -95,28 +93,28 @@ The key to effective refactoring is recognizing that you go faster when you take
         desc: 'The Hidden Language of Computer Hardware and Software',
         thumb: 'c.jpg',
         author: 'Charles Petzold',
-        amazon:
-          'https://www.amazon.com/Code-Language-Computer-Hardware-Software-dp-0137909101/dp/0137909101/',
+        amazon: 'https://www.amazon.com/Code-Language-Computer-Hardware-Software-dp-0137909101/dp/0137909101/',
         audible: '',
-        publishYear: '2000',
-      },
+        publishYear: '2000'
+      }
     ],
     notes: `
-    `,
+Covers the absolute basics of how computers work.
+    `
   },
   {
-    title: 'Uncle Bob',
+    title: 'Clean ________',
+    authorName: 'Robert Martin',
+    authorThumbnail: 'unclebob.jpg',
     books: [
       {
         title: 'Clean Code',
         desc: 'A Handbook of Agile Software Craftsmanship',
         thumb: 'ccode.jpg',
         author: 'Robert Martin*',
-        amazon:
-          'https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882',
-        audible:
-          'https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/B08X8ZXT15',
-        publishYear: '2008',
+        amazon: 'https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882',
+        audible: 'https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/B08X8ZXT15',
+        publishYear: '2008'
       },
       {
         title: 'The Clean Coder',
@@ -124,20 +122,17 @@ The key to effective refactoring is recognizing that you go faster when you take
         thumb: 'ccode2.jpg',
         author: 'Robert Martin',
         amazon: 'https://www.amazon.com/dp/0137081073?ref=emc_s_m_5_i_n',
-        audible:
-          'https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/B08X7MNTCX',
-        publishYear: '2011',
+        audible: 'https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/B08X7MNTCX',
+        publishYear: '2011'
       },
       {
         title: 'Clean Architecture',
         desc: `A Craftsman's Guide to Software Structure and Design`,
         thumb: 'carch.jpg',
         author: 'Robert Martin',
-        amazon:
-          'https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164',
-        audible:
-          'https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/B08X8H5G2J/',
-        publishYear: '2017',
+        amazon: 'https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164',
+        audible: 'https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/B08X8H5G2J/',
+        publishYear: '2017'
       },
       {
         title: 'Clean Agile',
@@ -145,30 +140,31 @@ The key to effective refactoring is recognizing that you go faster when you take
         thumb: 'cagile.jpg',
         author: 'Robert Martin',
         amazon: 'https://www.amazon.com/dp/0135781868',
-        audible:
-          'https://www.amazon.com/Clean-Agile-Back-to-Basics/dp/B08X7FWCZM/',
-        publishYear: '2019',
+        audible: 'https://www.amazon.com/Clean-Agile-Back-to-Basics/dp/B08X7FWCZM/',
+        publishYear: '2019'
       },
       {
         title: 'Clean Craftsmanship',
         desc: 'Disciplines, Standards, and Ethics',
         thumb: 'ccraft.jpg',
         author: 'Robert Martin',
-        amazon:
-          'https://www.amazon.com/Clean-Craftsmanship-Disciplines-Standards-Ethics/dp/013691571X',
+        amazon: 'https://www.amazon.com/Clean-Craftsmanship-Disciplines-Standards-Ethics/dp/013691571X',
         audible: '',
-        publishYear: '2021',
+        publishYear: '2021'
       },
       {
         title: 'Functional Design',
-        desc: 'Disciplines, Standards, and Ethics',
-        publishYear: '2023',
-      },
+        desc: 'Principles, Patterns, and Practices',
+        thumb: 'fd.jpg',
+        amazon: 'https://www.amazon.com/Functional-Design-Principles-Patterns-Practices/dp/0138176396',
+        author: 'Robert Martin',
+        publishYear: '2023'
+      }
     ],
     notes: `
-    Bob started programming in the 1970s
-    Clean Code:
-    Definition of clean code
+Bob started programming in the 1970s
+Clean Code:
+Definition of clean code
 Meaningful Variable Names
 Functions
 Good Comments
@@ -223,30 +219,42 @@ How developers and teams can promote productivity, quality, and courage
 The true meaning of integrity and teamwork among programmers, 
 and ten specific commitments every software professional should make
 
-
+Functional Design:
+Understand functional basics: immutability, persistent data, recursion, iteration, laziness, and statefulness
 
 
 
 
     
-    `,
+    `
   },
   {
-    title: '',
+    title: 'More Quality Books',
     books: [
+      {
+        title: 'Extreme Programming Explained',
+        desc: 'Embrace Change',
+        thumb: 'ep.jpg',
+        author: ' Kent Beck*,  Cynthia Andres',
+        amazon: 'https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658',
+        audible: '',
+        publishYear: '2004, '
+      },
       {
         title: 'The Pragmatic Programmer',
         desc: 'Your Journey To Mastery',
         thumb: 'pp.jpg',
         author: 'David Thomas*, Andrew Hunt',
-        amazon:
-          'https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052/',
-        audible:
-          'https://www.amazon.com/Pragmatic-Programmer-Anniversary-Journey-Mastery/dp/B0833FBNHV',
-        publishYear: '1999, 2019',
-      },
+        amazon: 'https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052/',
+        audible: 'https://www.amazon.com/Pragmatic-Programmer-Anniversary-Journey-Mastery/dp/B0833FBNHV',
+        publishYear: '1999, 2019'
+      }
     ],
     notes: `
+Extreme Programming:
+More of a 'how we got here book'.
+Lots of early agile practices.
+
 A Pragmatic Philosophy
 DRY
 Orthogonality
@@ -255,6 +263,30 @@ Basic Tools
 Power of Plain Text
 Shell Games
 No broken windows -> neglect accelerates the rot faster than any other factor.
-`,
-  },
+20th anniv
+`
+  }
 ];
+
+/*
+Add Software security
+Cybersecurity First Principles
+THe Cuckoo's Egg
+
+Ghost in the wires
+The Art of Invisibility
+
+The Web Application Hacker's Handbook // Recommended by Copilot
+
+
+-- Startup
+Ask your developer
+
+
+
+Look into the 80/20 principle
+
+
+
+Add Extreme Programming
+*/

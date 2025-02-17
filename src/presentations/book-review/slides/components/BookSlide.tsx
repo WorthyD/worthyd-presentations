@@ -13,8 +13,11 @@ export const BookSlide = ({ title, books, notes }: BookSlideProps) => (
   <>
     <Slide>
       <h2>{title}</h2>
+
       <BookList books={books} baseKey={encodeURIComponent(title)} />
-      <Note><pre>{notes}</pre></Note>
+      <Note>
+        <pre>{notes}</pre>
+      </Note>
     </Slide>
   </>
 );

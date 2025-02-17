@@ -1,21 +1,21 @@
-:root .theme-jbh {
-  --r-background-color: #353535;
+:root.theme-jbh {
+  --r-background-color: #fff;
   --r-main-font: Helvetica, Arial, sans-serif;
   --r-main-font-size: 42px;
-  --r-main-color: #fff;
+  --r-main-color: #000;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
   --r-heading-font: Helvetica, Arial, sans-serif;
-  --r-heading-color: #fff;
+  --r-heading-color: #0b4f6c;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
-  --r-heading-text-transform: uppercase;
+  --r-heading-text-transform: normal;
   --r-heading-text-shadow: none;
   --r-heading-font-weight: 500;
   --r-heading1-text-shadow: none;
   --r-heading1-size: 2em;
   --r-heading2-size: 1.2em;
-  --r-heading3-size: 1.2em;
+  --r-heading3-size: 1em;
   --r-heading4-size: 0.8em;
   --r-code-font: monospace;
   --r-link-color: #007dba;
@@ -23,6 +23,56 @@
   --r-link-color-hover: #008ed4;
   --r-selection-background-color: #08aeff;
   --r-selection-color: #fff;
-  --r-sub-heading-color: #252525;
  
+  --r-highlight-color:#ff0;
+}
+
+
+.theme-jbh {
+  .reveal {
+    // h2 {
+    //   font-weight: bold;
+    // }
+    // h3 {
+    //   color: #17b730;
+    // }
+    // ul > li {
+    //   font-size: 30px;
+    //   color: #898989;
+    // }
+    h2, h3, h4{
+    text-transform: capitalize;
+    }
+
+    .jbh-logo {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      &__bg {
+      }
+      svg {
+        fill:#0b4f6c;
+        height: 50px;
+        display: block;
+        z-index: 9999;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        max-height: 50px;
+        margin: 0;
+      }
+    }
+    // .skillup-footer {
+    //   position: fixed;
+    //   font-size: 12px;
+    //   bottom: 0;
+    //   left: 50%;
+    //   transform: translate(-50%, 0);
+    // }
+
+    // .controls {
+    //   right: auto;
+    //   left: 100px;
+    // }
+  }
 }

@@ -4,6 +4,8 @@ import { Slide } from '~/components/Slide';
 export interface BookGroupInfo {
   title: string;
   books: BookItem[];
+  authorName?: string;
+  authorThumbnail?: string;
   notes: string;
 }
 interface BookGroupProps {
@@ -14,19 +16,19 @@ interface BookGroupProps {
 
 export const BookGroup = ({ bookSlides, title, subTitle }: BookGroupProps) => (
   <>
+    {/* <Slide> */}
     <Slide>
-      <Slide>
-        <h2>{title}</h2>
-        <p>{subTitle}</p>
-      </Slide>
-      {bookSlides.map((bs, i) => (
-        <BookSlide
-          title={bs.title}
-          books={bs.books}
-          notes={bs.notes}
-          key={`bookslide_${bs.title}_${i}`}
-        />
-      ))}
+      <h2>{title}</h2>
+      <p>{subTitle}</p>
     </Slide>
+    {bookSlides.map((bs, i) => (
+      <BookSlide
+        title={bs.title}
+        books={bs.books}
+        notes={bs.notes}
+        key={`bookslide_${bs.title}_${i}`}
+      />
+    ))}
+    {/* </Slide> */}
   </>
 );

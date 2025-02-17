@@ -6,22 +6,28 @@
   justify-content: center;
   > .book-item {
     width: 50%;
-    &__thumb {
-      max-width: 175px;
-      max-height: 175px;
-    }
+  }
+  .book-item__thumb {
+    max-width: 100px;
+    max-height: 100px;
   }
 }
 .book-items {
   display: flex;
-  flex-direction: column;
+  //flex-direction: column;
+  flex-wrap: wrap;
   align-items: flex-start;
   align-content: center;
+  justify-content: center;
+
   > .book-item {
-    width: 100%;
+    width: 50%;
+    padding-bottom:25px;
+    max-width: 500px;
   }
+
   .book-item__thumb {
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 200px;
+    max-height: 200px;
   }
 }

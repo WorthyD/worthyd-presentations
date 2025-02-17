@@ -67,14 +67,16 @@ from:https://www.oreilly.com/library/view/the-managers-path/9781491973882/
       },
     ],
     notes: `
-“Any organization that designs a system (defined broadly) will produce a design whose 
-structure is a copy of the organisation's communication structure.”
+“Any organization that designs a system (defined broadly)
+will produce a design whose structure is a copy of the 
+organisation's communication structure.”
 —. Conway    
-Heavy Focus on Team Size, team autonomy, and ability to produce.
+Heavy Focus on Team Size, team autonomy, 
+and ability to produce.
     `,
   },
   {
-    title: '',
+    title: 'Start with Why Series',
     books: [
       {
         title: `Start with Why`,
@@ -98,19 +100,37 @@ Heavy Focus on Team Size, team autonomy, and ability to produce.
           'https://www.amazon.com/Leaders-Eat-Last-Together-Others/dp/B084D1NZGL',
         publishYear: '2014',
       },
+      {
+        title: `Find Your Why`,
+        desc: `A Practical Guide for Discovering Purpose for You and Your Team`,
+        thumb: 'fyw.jpg',
+        author: 'Simon Sinek, David Mead, Peter Docker',
+        amazon:
+          'https://www.amazon.com/Find-Your-Why-Practical-Discovering/dp/0143111728',
+        audible:
+          'https://www.amazon.com/Find-Your-Why-audiobook/dp/B074F33DYD',
+        publishYear: '2017',
+      }, 
     ],
     notes: `
-    Why -> Your purpose
-    How -> Your Process, specific actions to realize your why
-    What -> What you do, the result of why
+Sinek gotten popular on TED talks and tiktok
+SWW -> They realized that people won't 
+truly buy into a product, service,
+ movement, or idea until they understand the WHY behind it
+Leaders -> 
+Marine Corps general conversation "officers eat last"
+Great leaders sacrifice their own comfort--
+even their own survival--for the good of 
+those in their care
+goes into the lengths some companies go through to avoid layoffs
+Hits generation gaps and the differences 
+in businesses though the day
+FYW -> 
+The book expands on the concepts of SWW
+and how to apply them to your life and team
 
-    Leaders -> 
-    Te need to be save, the courage to what's right
-    Great leaders sacrifice their own comfort--
-    even their own survival--for the good of those in their care
-    goes into the lengths some companies go through to avoid layoffs
-    Hits generation gaps and the differences in businesses though te day
-    
+-The Infinite Game
+-Together Is Better: A Little Book of Inspiration -Kids book
     `
   },
   {
@@ -127,10 +147,15 @@ Heavy Focus on Team Size, team autonomy, and ability to produce.
         publishYear: '1905?!? 2016',
       },
     ],
-    notes: `questions, attitudes and habits for managers of selfsustaining teams`,
+    notes: `questions, attitudes and habits for 
+    managers of selfs staining teams
+    
+    7 questions to ask
+    
+    `,
   },
   {
-    title: '',
+    title: 'Some war books!',
     books: [
       {
         title: `The Art of War`,
@@ -141,12 +166,26 @@ Heavy Focus on Team Size, team autonomy, and ability to produce.
         audible: '',
         publishYear: '5th century BC',
       },
+      {
+        title: `On War`,
+        desc: '',
+        thumb: 'ow.jpg',
+        author: 'Carl Von Clausewitz',
+        amazon: ' https://www.amazon.com/War-Carl-von-Clausewitz/dp/0691018545',
+        audible: '',
+        publishYear: '1832',
+      },
+ 
     ],
     notes: ` 
-    timeless wisdom about strategy, leadership, and conflict 
-    resolution that can be applied to various aspects of life beyond the military.
-
-    Leadership strategies, resource management, knowing yourself, knowing your opponent, win without battle    `,
+ timeless wisdom about strategy, leadership, and conflict 
+ resolution that can be applied to various 
+ aspects of life beyond the military.
+ Adaptability, Resource Management, Conflict resolution
+ and self-awareness
+ on war ->
+ The fog of war, friction, and the moral forces
+    `,
   },
 
   {
@@ -163,10 +202,15 @@ Heavy Focus on Team Size, team autonomy, and ability to produce.
       },
     ],
     notes: `
-    'He won because he possessed an extraordinary ability to put himself in 
-    the place of other men, to experience what they were feeling, 
-    to understand their motives and desires'
-successful because he found ways to win the respect of his former competitors
+'He won because he possessed an extraordinary 
+ability to put himself in the place of other men, 
+to experience what they were feeling, 
+to understand their motives and desires'
+
+successful because he found ways to 
+win the respect of his former competitors
+    
+Foundation of the Lincoln movie
     `,
   },
 ];
