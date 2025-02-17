@@ -23,6 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-src/presentatins/private/*
+src/presentations/private/*
 src/assets/private/*
 
