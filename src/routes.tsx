@@ -7,17 +7,17 @@ const UILibraries = lazy(() => import('./presentations/ui-libraries/UILibraries'
 const BookReview = lazy(() => import('./presentations/book-review/bookreview'));
 const Providers = lazy(() => import('./presentations/providers/Providers'));
 const Demo = lazy(() => import('./presentations/presentations/Demo'));
-const Review2024 = lazy(() => import('./presentations/private/2024-review/2024Review'));
+// const Review2024 = lazy(() => import('./presentations/private/2024-review/2024Review'));
 
 //import Providers from './presentations/providers/Providers';
 const SkillUpBookReview = lazy(() => import('./presentations/book-review/skillup-bookreview'));
 const BookList = lazy(() => import('./presentations/book-review/list'));
 
 const routes = [
-  {
-    path: '/:theme/2024-review',
-    element: Review2024
-  },
+  // {
+  //   path: '/:theme/2024-review',
+  //   element: Review2024
+  // },
   {
     path: '/:theme/skill-up-book-review',
     element: SkillUpBookReview

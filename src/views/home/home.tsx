@@ -18,9 +18,9 @@ const Home = () => (
         <li>
           <NavLink to="/jbh/demo">Sprint Demo</NavLink> - Sprint Demos
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/jbh/2024-review">2024 Review</NavLink>
-        </li>
+        </li> */}
 
         <li>
           <NavLink to="/skillup/skill-up-book-review">Book Review</NavLink> - SkillUp Book presentation
