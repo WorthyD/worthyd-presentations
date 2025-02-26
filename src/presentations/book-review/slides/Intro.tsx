@@ -32,7 +32,7 @@ export const Intro = () => {
         <Note>
           <ul>
             <li>16 years in the industry. Non traditional entry</li>
-            <li>Companies of 8 to 200-ish people. </li>
+            <li>3 Companies of 8 to 200-ish people. </li>
             <li>Mostly rapid greenfield/ rapid prototype applications</li>
             <li>What may be valuable to me wont be valuable to you</li>
             <li>
@@ -55,7 +55,12 @@ export const Intro = () => {
           <li className="fragment">Community hadn't embraced open source or knowledge sharing (at least in the ASP.NET world)</li>
           <li className="fragment">Coding books you owned were most likely from college/highschool</li>
         </ul>
-        <Note>C++ for you++</Note>
+        <Note>C++ for you++
+          <br />
+          Started with .net 2 and was told my next project was going to be in .net 3.5.
+
+
+        </Note>
       </Slide>
       <Slide>
         <img src={getImageUrl('book.png')} />
@@ -68,7 +73,11 @@ export const Intro = () => {
         <img src={getImageUrl('bookuse.png')} />
         <Note>
           I was really discouraged from buying books after this. <br />
-          It was expensive and I didn't get much out of it.
+          we didn't use components the same way it taught them <br />
+          asp.net datagrid vs gridview vs repeater <br />
+          It was expensive and I didn't get much out of it.<br />
+          very cautions on buying platform or framework specific books <br />
+          buy cheap or used if you must
         </Note>
       </Slide>
       {/* </Slide> */}
@@ -76,14 +85,13 @@ export const Intro = () => {
         <h2>Why should we be reading books?</h2>
         <ul>
           <li className="fragment">Short form content only covers so much</li>
-          <li className="fragment">Broaden our skill sets with minimal business risk</li>
+          <li className="fragment">Broaden our knowledge base</li>
           <li className="fragment">Provide new perspectives</li>
           <li className="fragment">Motivational</li>
         </ul>
         <Note>
           <ul>
             <li>web Articles are great the get lost in book marks sometimes lack the depth we really need </li>
-            <li>Rusty on devops concepts?</li>
             <li>Not Yolo-ing microservices to production</li>
             <li>New perspectives on tooling and techniques</li>
             <li>Personally I've done my most impactful work making after reading some of these books</li>
@@ -100,8 +108,10 @@ export const Intro = () => {
             <li>Listen doing chores</li>
             <li>Listen in car rider line</li>
             <li>mowing the lawn</li>
-            <li>Eventually listen at 1.75 speed</li>
             <li>downside: Listen to the same book twice</li>
+            <li>most books around 8 to 12 hours. </li>
+            <li>Reference: HP 24, Stormlight Archive 60</li>
+            <li>Whittle time down by listening at 1.5 speed</li>
           </ul>
         </Note>
       </Slide>
@@ -117,6 +127,8 @@ export const Intro = () => {
             <li>Some books are only $8 with a subscription</li>
             <li>Some books are free with subscription</li>
             <li>PDFs of example code</li>
+            <li>Find what works for you, </li>
+            <li>physical, kindle, audio</li>
           </ul>
         </Note>
       </Slide>

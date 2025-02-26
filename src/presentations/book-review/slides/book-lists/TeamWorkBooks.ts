@@ -14,13 +14,16 @@ export const TeamWorkBookList: BookGroupInfo[] = [
         publishYear: `1984`
       }
     ],
-    notes: `Taiichi Ohno's Toyota's Production system
+    notes: `narrative story around
+Taiichi Ohno's Toyota's Production system
 Narrative teaching the theory of contraints
 100% utilization is not the goal
 Process Of On-Going Improvement (POOGI):
 Identify the system's bottlenecks
 Decide how to exploit those bottlenecks
-
+Factory can't be 100% efficient if
+Every machine is 100% efficient
+because of work in progress
     
     `
   },

@@ -222,6 +222,8 @@ and ten specific commitments every software professional should make
 Functional Design:
 Understand functional basics: immutability, persistent data, recursion, iteration, laziness, and statefulness
 
+Nov 2024
+We, Programmers: A Chronicle of Coders from Ada to AI
 
 
 

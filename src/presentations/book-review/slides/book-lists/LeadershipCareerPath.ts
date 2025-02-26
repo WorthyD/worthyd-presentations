@@ -43,7 +43,7 @@ from:https://www.oreilly.com/library/view/the-managers-path/9781491973882/
       },
     ],
     notes: `
-    Ramadi, Iraw
+    Ramadi, Iraq
     Story -> Principle -> Application to business
     No bad teams, only bad leaders
     How to lead up and down the chain of command.

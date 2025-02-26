@@ -16,7 +16,7 @@ const SkillUpBookReview = () => {
         <Slide>
           <img src="/skillup-logo.png" style={{ width: '400px' }} />
           <h2>Dev Books</h2>
-          <p>30+ books you could/shoud/maybe read</p>
+          <p>30+ books you could/should/maybe read</p>
           <footer>Feb 2025</footer>
         </Slide>
         <AboutMe key="am" />

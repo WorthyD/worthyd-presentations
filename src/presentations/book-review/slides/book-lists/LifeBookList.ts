@@ -57,7 +57,7 @@ Deep work is like a superpower in our increasingly competitive twenty-first-cent
 
 Digital Min:
 Focus on social media is evil
-FOMO bad
+FOMO bad, dopamine 'like' addiction
  
       
       `
@@ -137,7 +137,11 @@ and how they can be leveraged.
       }
     ],
     notes: `
-Former FBI negotiator    
+Former FBI negotiator.
+Breaks down negotiation tactics
+Read before buying a car, asking for a raise,
+
+
 
     `
   },
