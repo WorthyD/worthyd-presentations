@@ -44,7 +44,6 @@ export const Outro = () => {
         <h2>Book Recommendation</h2>
         <h3>Tidy First</h3>
         <img src={getImageBookUrl('tidy2.jpg')} />
-        <Note></Note>
       </Slide>
       <Slide>
         <h3>Contact</h3>
