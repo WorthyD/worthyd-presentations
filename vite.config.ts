@@ -6,18 +6,25 @@ import * as path from 'path';
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 4321,
+    port: 4321
   },
   resolve: {
-    alias: {
-      '~': path.resolve(__dirname, 'src'),
-    },
+    alias: [
+      {
+        find: '~',
+        replacement: path.resolve(__dirname, 'src')
+      },
+      {
+        find: /@\//,
+        replacement: path.join(process.cwd(), 'node_modules/')
+      }
+    ]
   },
   build: {
     commonjsOptions: {
-      transformMixedEsModules: true,
+      transformMixedEsModules: true
     },
-    outDir: path.join(__dirname, 'dist'),
+    outDir: path.join(__dirname, 'dist')
   },
-  base: '/',
+  base: '/'
 });

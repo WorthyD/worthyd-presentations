@@ -44,8 +44,9 @@ export const Outro = () => {
           </a>
         </h4>
         <h4>
-          <a href="https://angular.dev/guide/di/dependency-injection" target="_blank">
-            Understanding dependency injection
+          <a href="https://go.nx.dev/angular-patterns-ebook" target="_blank">
+            Enterprise Monorepo Angular Patterns <br />
+            by the Nx Core Team
           </a>
         </h4>
       </Slide>

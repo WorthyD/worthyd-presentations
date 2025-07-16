@@ -1,4 +1,4 @@
-@import '/node_modules/reveal.js/css/theme/template/settings.scss';
+@use '@/reveal.js/css/theme/template/settings.scss';
 
 a[target='_blank']:after {
   font-family: 'FontAwesome';

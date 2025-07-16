@@ -11,6 +11,7 @@ const Demo = lazy(() => import('./presentations/presentations/Demo'));
 
 //import Providers from './presentations/providers/Providers';
 const SkillUpBookReview = lazy(() => import('./presentations/book-review/skillup-bookreview'));
+const SkillUpModuleBoundaries = lazy(() => import('./presentations/module-boundaries/skillup-module-boundaries'));
 const BookList = lazy(() => import('./presentations/book-review/list'));
 
 const routes = [
@@ -21,6 +22,10 @@ const routes = [
   {
     path: '/:theme/skill-up-book-review',
     element: SkillUpBookReview
+  },
+  {
+    path: '/:theme/skill-up-module-boundaries',
+    element: SkillUpModuleBoundaries
   },
   {
     path: '/book-list',

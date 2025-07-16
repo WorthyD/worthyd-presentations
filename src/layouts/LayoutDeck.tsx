@@ -21,6 +21,7 @@ const LayoutDeck = ({ options, children }: LayoutDeckProps) => {
   let [theme, setTheme] = useState(null);
 
   useEffect(() => {
+    console.log('Initializing Reveal.js with options:', options);
     Reveal.initialize({
       ...revealOptions,
       ...options,

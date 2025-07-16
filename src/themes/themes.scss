@@ -1,11 +1,14 @@
 //@import '/node_modules/reveal.js/css/theme/template/theme.scss';
 // @import '/node_modules/reveal.js/dist/theme/fonts/source-sans-pro/source-sans-pro.css';
+@import '@/reveal.js/css/theme/template/mixins.scss';
+@import '@/reveal.js/css/theme/template/settings.scss';
+@import '@/reveal.js/css/theme/template/theme.scss';
+// @use '@/reveal.js/dist/reveal.css';
 
 @import './base.scss';
 @import './jbh.scss';
 @import './skillup.scss';
 
-@import '/node_modules/reveal.js/css/theme/template/theme.scss';
 .reveal {
   pre {
     font-size: 1rem;
