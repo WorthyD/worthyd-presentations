@@ -31,13 +31,13 @@ export const Intro = () => {
         <ul>
           <li className="fragment">Guidelines for structuring your code</li>
           <li className="fragment">Define how different parts of your application interact</li>
-          <li className="fragment">Help in organizing code into manageable sections</li>
+          <li className="fragment">Enforced by ESLint or by npm script</li>
         </ul>
         <Note>
           <ul>
             <li>Module boundaries help define the structure of your application.</li>
-            <li>They can be physical (like directories) or logical (like namespaces).</li>
-            <li>Understanding these boundaries can lead to better code organization and maintainability.</li>
+            <li>Add guard rails on what can be imported where</li>
+            <li>Native to NX, discuss vanilla angular</li>
           </ul>
         </Note>
       </Slide>
@@ -52,7 +52,7 @@ export const Intro = () => {
           <ul>
             <li>Clear module boundaries can make your codebase easier to navigate.</li>
             <li>They can also help in isolating issues during testing and debugging.</li>
-            <li>Well-defined boundaries can lead to reusable components, reducing duplication of effort.</li>
+            <li></li>
           </ul>
         </Note>
       </Slide>
@@ -80,6 +80,11 @@ export const Intro = () => {
   }
 }
 `}/>
+<Note>
+  This is an NX project.json for a library. 
+  <br />
+  We will talk about each of the tags in more detail.
+</Note>
 
       </Slide>
     </>

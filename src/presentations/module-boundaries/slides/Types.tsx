@@ -28,7 +28,13 @@ export const Types = () => {
           </div>
         </div>
         <Note>
-          <ul></ul>
+          <ul>
+            <li>App - main thing you compile and run</li>
+            <li>Feature - Usually something you can navigate to or complex component</li>
+            <li>DA - Web requests</li>
+            <li>UI - Presentational components. Storybook and Component testing</li>
+            <li>Utils - Pure functions, e.g. formatters, DTO converters, etc.</li>
+          </ul>
         </Note>
       </Slide>
       <Slide>
@@ -52,7 +58,12 @@ export const Types = () => {
           </div>
         </div>
         <Note>
-          <ul></ul>
+          <ul>
+            <li>Models - Instance where we wanted models to be available everywhere.</li>
+            <li>e2e-utils - old login method, select by data-cy attr, .</li>
+            <li>assets - shared scss files, images </li>
+            <li>store</li>
+          </ul>
         </Note>
       </Slide>
       <Slide>
@@ -180,6 +191,11 @@ export const Types = () => {
     feature_admin_shell --> Application
         `}
         ></Mermaid>
+        <Note>
+          <ul>
+            <li>Show effected and how it speeds up/slows down pipelines</li>
+          </ul>
+        </Note>
       </Slide>
       <Slide>
         <h2>Finding Balance</h2>
@@ -223,9 +239,12 @@ export const Types = () => {
           </div>
         </div>
         <Note>
-This both impacts folder structure and potentially length of time the pipeline runs
-<br />
-Libraries have 'spinup' time, so the more libraries you have, the longer it takes to run the pipeline
+          <ul>
+            <li>This both impacts folder structure and potentially length of time the pipeline runs</li>
+            <li>Libararies have spin up time. Load jest config, find test files, etc</li>
+            <li>what is better 10 libraries with 100 tests each or 100 libraries with 10 tests each?</li>
+          </ul>
+          <br />
         </Note>
       </Slide>
     </>

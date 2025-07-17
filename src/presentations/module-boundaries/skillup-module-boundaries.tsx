@@ -12,12 +12,12 @@ const SkillUpModuleBoundaries = () => {
     <>
       <LayoutDeck>
         <Slide>
-          <img src="/skillup-logo.png" style={{ width: '400px' }} />
+          <img src="/skillup-logo.png" style={{ width: '300px' }} />
           <h2>Module Boundaries</h2>
-          <p>
+          <p  className="small-text">
             <s>Rules</s> Guidelines for structuring your code
           </p>
-          <footer>Aug 2025</footer>
+          <img src="/qr-modules.png" style={{ width: '150px' }} />
         </Slide>
         <AboutMe key="am" />
         <Intro key="intro" />
