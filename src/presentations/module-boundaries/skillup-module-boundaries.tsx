@@ -15,7 +15,7 @@ const SkillUpModuleBoundaries = () => {
           <img src="/skillup-logo.png" style={{ width: '300px' }} />
           <h2>Module Boundaries</h2>
           <p  className="small-text">
-            <s>Rules</s> Guidelines for structuring your code
+            Rules for structuring your code
           </p>
           <img src="/qr-modules.png" style={{ width: '150px' }} />
         </Slide>

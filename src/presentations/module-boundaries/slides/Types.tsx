@@ -6,7 +6,9 @@ export const Types = () => {
   return (
     <>
       <Slide>
-        <h2>Boundary Types</h2>
+        <h2>
+          Boundary Types <small>as defined by NX</small>
+        </h2>
         <div className="two-col col-top">
           <div>
             <dl>
@@ -38,7 +40,68 @@ export const Types = () => {
         </Note>
       </Slide>
       <Slide>
-        <h2>Custom Types</h2>
+        <h2>What can use what?</h2>
+        <div className="two-col col-top">
+          <div>
+            <dl>
+              <dt className="fragment">app</dt>
+              <dd className="fragment small-text">can import all the things</dd>
+              <dt className="fragment">feature</dt>
+              <dd className="fragment  small-text">feature, data-access, ui, utils</dd>
+              <dt className="fragment">data-access</dt>
+              <dd className="fragment small-text">data-access, utils</dd>
+            </dl>
+          </div>
+          <div className="col-top">
+            <dl>
+              <dt className="fragment">ui</dt>
+              <dd className="fragment small-text">ui, utils</dd>
+              <dt className="fragment">utils</dt>
+              <dd className="fragment small-text">utils</dd>
+            </dl>
+          </div>
+        </div>
+      </Slide>
+
+      <Slide>
+        <h2>What can use what?</h2>
+        <Mermaid
+          chart={`
+        stateDiagram-v2
+    utils_admin --> ui_admin
+    utils_admin --> feature_admin
+    utils_admin --> data_access_admin
+    data_access_admin --> feature_admin
+    ui_admin --> feature_admin
+    feature_admin --> Application
+        `}
+        ></Mermaid>
+        <div className="small-text">Replace _ with -. Hyphens don't work well in Mermaid Charts</div>
+      </Slide>
+      <Slide>
+        <h2>Basic Structure</h2>
+        <Mermaid
+          chart={`
+        stateDiagram-v2
+    utils_admin --> ui_admin
+    utils_admin --> feature_admin
+    utils_admin --> data_access_admin
+    data_access_admin --> feature_admin
+    ui_admin --> feature_admin
+    utils_roster --> ui_roster
+    utils_roster --> feature_roster
+    utils_roster --> data_access_roster
+    data_access_roster --> feature_roster
+    ui_roster --> feature_roster
+    feature_admin --> Application
+    feature_roster --> Application
+        `}
+        ></Mermaid>
+      </Slide>
+      <Slide>
+        <h2>
+          Custom Types <small>as defined by you</small>
+        </h2>
         <div className="two-col col-top">
           <div>
             <dl>
@@ -66,63 +129,6 @@ export const Types = () => {
           </ul>
         </Note>
       </Slide>
-      <Slide>
-        <h2>What can use what?</h2>
-        <div className="two-col col-top">
-          <div>
-            <dl>
-              <dt className="fragment">app</dt>
-              <dd className="fragment small-text">can import all the things</dd>
-              <dt className="fragment">feature</dt>
-              <dd className="fragment  small-text">feature, data-access, ui, utils</dd>
-              <dt className="fragment">data-access</dt>
-              <dd className="fragment small-text">data-access, utils</dd>
-            </dl>
-          </div>
-          <div className="col-top">
-            <dl>
-              <dt className="fragment">ui</dt>
-              <dd className="fragment small-text">ui, utils</dd>
-              <dt className="fragment">utils</dt>
-              <dd className="fragment small-text">utils</dd>
-            </dl>
-          </div>
-        </div>
-      </Slide>
-      <Slide>
-        <h2>What can use what?</h2>
-        <Mermaid
-          chart={`
-        stateDiagram-v2
-    utils_admin --> ui_admin
-    utils_admin --> feature_admin
-    utils_admin --> data_access_admin
-    data_access_admin --> feature_admin
-    ui_admin --> feature_admin
-    feature_admin --> Application
-        `}
-        ></Mermaid>
-        <div className="small-text">Replace _ with -. Mermaid charts don't like hyphens</div>
-      </Slide>
-      <Slide>
-        <Mermaid
-          chart={`
-        stateDiagram-v2
-    utils_admin --> ui_admin
-    utils_admin --> feature_admin
-    utils_admin --> data_access_admin
-    data_access_admin --> feature_admin
-    ui_admin --> feature_admin
-    utils_roster --> ui_roster
-    utils_roster --> feature_roster
-    utils_roster --> data_access_roster
-    data_access_roster --> feature_roster
-    ui_roster --> feature_roster
-    feature_admin --> Application
-    feature_roster --> Application
-        `}
-        ></Mermaid>
-      </Slide>
 
       <Slide>
         <h2>How do we organize this mess?</h2>
@@ -136,12 +142,12 @@ export const Types = () => {
     application
   libs/
     admin/ <-- Grouping Folder
-      data-access
+      data-access-admin
       feature-admin
       ui-admin
       utils-admin
     roster/ <-- Grouping Folder
-      data-access
+      data-access-admin
       feature-roster
       ui-roster
       utils-roster
@@ -170,10 +176,67 @@ export const Types = () => {
             />
           </div>
         </div>
-        <Note>Grouping folder are the preferred way to organize the code.</Note>
+        <Note>
+          Method 1. Attach type to folder name. <br />
+          Method 2. Next libs in folder with name of type <br />
+          Grouping folder are the preferred way to organize the code by nx <br />
+          decide as a team
+        </Note>
+      </Slide>
+
+      <Slide>
+        <h2>Finding Balance</h2>
+
+        <div className="two-col col-top">
+          <div className="fragment">
+            <h3>Heavy Libraries</h3>
+            <MD
+              code={`
+  libs/
+    admin/ 
+      data-access-admin  <--Library
+      feature-admin  <--Library
+        profile
+        user-import
+        user-list
+      ui-admin   <--Library
+        avatar
+        list-item
+      utils-admin  <--Library
+        helpers
+`}
+            />
+          </div>
+          <div className="fragment">
+            <h3>Library Heavy</h3>
+            <MD
+              code={`
+  libs/
+    admin/  
+      data-access <-- Everything is a library
+      feature-profile
+      feature-shell
+      feature-user-import
+      feature-user-list
+      ui-avatar
+      ui-list-item
+      utils-helpers
+`}
+            />
+          </div>
+        </div>
+        <Note>
+          <ul>
+            <li>This both impacts folder structure and potentially length of time the pipeline runs</li>
+            <li>Libararies have spin up time. Load jest config, find test files, etc</li>
+            <li>what is better 10 libraries with 100 tests each or 100 libraries with 10 tests each?</li>
+          </ul>
+          <br />
+        </Note>
       </Slide>
       <Slide>
-        <h2>How types help build pipeline</h2>
+        <h2>Quick Benefit</h2>
+        <h3>How types help build pipeline</h3>
         <Mermaid
           chart={`
         stateDiagram-v2
@@ -193,58 +256,10 @@ export const Types = () => {
         ></Mermaid>
         <Note>
           <ul>
+            <li>Types establish a hierarchical structure to code</li>
+            <li>Affected graph</li>
             <li>Show effected and how it speeds up/slows down pipelines</li>
           </ul>
-        </Note>
-      </Slide>
-      <Slide>
-        <h2>Finding Balance</h2>
-
-        <div className="two-col col-top">
-          <div className="fragment">
-            <h3>Heavy Libraries</h3>
-            <MD
-              code={`
-  libs/
-    admin/ 
-      data-access
-      feature-admin
-        profile
-        user-import
-        user-list
-      ui-admin
-        avatar
-        list-item
-      utils-admin
-        helpers
-`}
-            />
-          </div>
-          <div className="fragment">
-            <h3>Library Heavy</h3>
-            <MD
-              code={`
-  libs/
-    admin/ 
-      data-access
-      feature-profile
-      feature-shell
-      feature-user-import
-      feature-user-list
-      ui-avatar
-      ui-list-item
-      utils-helpers
-`}
-            />
-          </div>
-        </div>
-        <Note>
-          <ul>
-            <li>This both impacts folder structure and potentially length of time the pipeline runs</li>
-            <li>Libararies have spin up time. Load jest config, find test files, etc</li>
-            <li>what is better 10 libraries with 100 tests each or 100 libraries with 10 tests each?</li>
-          </ul>
-          <br />
         </Note>
       </Slide>
     </>

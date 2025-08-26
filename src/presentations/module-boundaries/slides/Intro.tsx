@@ -29,7 +29,7 @@ export const Intro = () => {
       <Slide>
         <h2>What are Module Boundaries?</h2>
         <ul>
-          <li className="fragment">Guidelines for structuring your code</li>
+          <li className="fragment">Rules for structuring your code</li>
           <li className="fragment">Define how different parts of your application interact</li>
           <li className="fragment">Enforced by ESLint or by npm script</li>
         </ul>
@@ -38,6 +38,7 @@ export const Intro = () => {
             <li>Module boundaries help define the structure of your application.</li>
             <li>Add guard rails on what can be imported where</li>
             <li>Native to NX, discuss vanilla angular</li>
+            <li>Can be enforced without tools, but only with a lot of discipline</li>
           </ul>
         </Note>
       </Slide>
@@ -59,7 +60,9 @@ export const Intro = () => {
       <Slide>
         <h2>Applying Module Boundaries</h2>
 
-<JSON code={`{
+<JSON code={`
+// project.json for a library in NX
+{
   "name": "my-app-admin",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
@@ -83,7 +86,7 @@ export const Intro = () => {
 <Note>
   This is an NX project.json for a library. 
   <br />
-  We will talk about each of the tags in more detail.
+We use the 'tags' property and the sytax is 'key:value'
 </Note>
 
       </Slide>

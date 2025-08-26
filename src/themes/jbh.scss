@@ -23,10 +23,9 @@
   --r-link-color-hover: #008ed4;
   --r-selection-background-color: #08aeff;
   --r-selection-color: #fff;
- 
-  --r-highlight-color:#ff0;
-}
 
+  --r-highlight-color: #ff0;
+}
 
 .theme-jbh {
   .reveal {
@@ -40,8 +39,14 @@
     //   font-size: 30px;
     //   color: #898989;
     // }
-    h2, h3, h4{
-    text-transform: capitalize;
+    h2,
+    h3,
+    h4 {
+      text-transform: capitalize;
+    }
+    h2 small {
+      font-size: 0.2em;
+      vertical-align: baseline;
     }
 
     .jbh-logo {
@@ -51,7 +56,7 @@
       &__bg {
       }
       svg {
-        fill:#0b4f6c;
+        fill: #0b4f6c;
         height: 50px;
         display: block;
         z-index: 9999;

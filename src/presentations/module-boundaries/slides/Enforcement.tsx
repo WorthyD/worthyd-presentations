@@ -40,9 +40,13 @@ export const Enforcement = () => {
 
   await angularLibraryGenerator(tree, ngOptions);
 
-  // Add remove files
+  // Remove unnecessary files
 `}
         ></TSX>
+        <Note>
+          Going in and remembering to add MB can be challening. <br />
+          You can also write an executor to find all your libs without MBs
+        </Note>
       </Slide>
       <Slide>
         <h2>Enforce Module Boundaries</h2>
@@ -111,19 +115,130 @@ export const Enforcement = () => {
         </Note>
       </Slide>
       <Slide>
+        <h2>Additional Settings</h2>
+        <TSX
+          code={`
+          {
+            "rules": {
+              "@nrwl/nx/enforce-module-boundaries": [
+                "error",
+                {
+                  enforceBuildableLibs: true,
+                  allow: ['@shared/**', '@features/**', '@store/**', '@services/**'], // Migration strategy
+                  depConstraints: [
+                    {
+                      sourceTag: "scope:shared",
+                      notDependOnLibsWithTags: ["scope:application1", "scope:application2"]
+                    },
+                    {
+                      allSourceTags: ["scope:admin", "type:ui"],
+                      onlyDependOnLibsWithTags: ["type:util"],
+                      allowedExternalImports: ["@angular/core", "@angular/common"] // Allow Angular imports
+                      bannedExternalImports: ["*router*", "@angular/common/http"] // Rejects Angular Router & http imports
+                    }
+                 ]
+                }
+              ]
+            }
+          }
+        `}
+        ></TSX>
+        <Note>
+          <ul>
+            <li>sourceTag or allSourceTags - must have one</li>
+            <li>enforceBuildableLibs- Enforces that libraries are buildable</li>
+            <li>imports- Exclusive list of external (npm) packages</li>
+          </ul>
+        </Note>
+      </Slide>
+      <Slide>
         <h2>Migrating to Module Boundaries</h2>
         <ul>
           <li className="fragment">Identify a pattern you want to follow with your team</li>
-          <li className="fragment">Setup ignore for old folders as you migrate</li>
-          <li className="fragment">Write a generator/executor to find libs without rules</li>
+          <li className="fragment">Setup ignore for old folders/paths as you migrate</li>
+          <li className="fragment">Write a generator/executor to find libs without tags</li>
           <li className="fragment">Leave code better than you found it</li>
         </ul>
         <Note>
-          We have an executor that will find all libs that do not have module boundaries defined
-          <br />
-          Find UI libs without storybook or component testing
+          <ul>
+            <li>Setup a pattern you want to initially follow, write an ADR on it</li>
+            <li>Leverage the "allow" setting, tag items as feature until you can refactor to smaller bits</li>
+            <li>If you already have libs, you can write a generator to find the libs without tags</li>
+            <li>Find UI libs without storybook or component testing, build out the command to generate them</li>
+          </ul>
         </Note>
       </Slide>
+      <Slide>
+        <h2>Migration Step 1</h2>
+        <div className="two-col col-top">
+          <div className="fragment">
+            <MD
+              code={`
+  apps/
+    admin/
+      components/
+      services/
+      store/
+      admin.component
+    roster/
+`}
+            />
+          </div>
+          <div className="fragment">
+            <MD
+              code={`
+  apps/
+    roster/
+  libs/
+    admin/
+      feature-admin/ <-- Feature Lib
+        components/
+        services/
+        store/
+        admin.component
+ 
+`}
+            />
+          </div>
+        </div>
+      </Slide>
+      <Slide>
+        <h2>Migration Step 2</h2>
+        <div className="two-col col-top">
+          <div className="fragment">
+            <MD
+              code={`
+  apps/
+    roster/
+  libs/
+    admin/
+      feature-admin/
+        components
+        services
+        store
+        admin.component
+ 
+`}
+            />
+          </div>
+          <div className="fragment">
+            <MD
+              code={`
+  apps/
+    roster/
+  libs/
+    admin/
+      data-access-admin/ <-- previously services and store
+      feature-admin/
+        admin.component
+      ui-admin/ <-- Previously components
+ 
+`}
+            />
+          </div>
+        </div>
+      </Slide>
+
       <Slide>
         <h2>Vanilla Angular Module Boundaries</h2>
         <h3>They don't exist, but we can use a tool to enforce them</h3>
