@@ -29,6 +29,9 @@ const Home = () => (
         <li>
           <NavLink to="/skillup/skill-up-module-boundaries">Module Boundaries</NavLink> - SkillUp Module Boundaries presentation
         </li>
+        <li>
+          <NavLink to="/jbh/web-requests">Web Requests</NavLink> - Web Requests presentation
+        </li>
       </ul>
     </div>
   </section>

@@ -13,6 +13,7 @@ const Demo = lazy(() => import('./presentations/presentations/Demo'));
 const SkillUpBookReview = lazy(() => import('./presentations/book-review/skillup-bookreview'));
 const SkillUpModuleBoundaries = lazy(() => import('./presentations/module-boundaries/skillup-module-boundaries'));
 const BookList = lazy(() => import('./presentations/book-review/list'));
+const WebRequests = lazy(() => import('./presentations/web-requests/web-requests'));
 
 const routes = [
   // {
@@ -30,6 +31,10 @@ const routes = [
   {
     path: '/book-list',
     element: BookList
+  },
+  {
+    path: '/:theme/web-requests',
+    element: WebRequests
   }
 ];
 

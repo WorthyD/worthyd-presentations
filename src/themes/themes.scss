@@ -22,7 +22,11 @@
     }
   }
 }
-
+.small-code {
+  pre {
+    font-size: 10px !important;
+  }
+}
 .rem1 {
   font-size: 1rem;
 }
